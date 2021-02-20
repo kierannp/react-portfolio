@@ -1,9 +1,9 @@
 {
-  "name": "react-portfolio-template",
+  "name": "react-portfolio",
   "private": true,
-  "description": "Portfolio Template For Awesome Peoples",
+  "description": "Portfolio for Kieran Nehil",
   "version": "0.1.0",
-  "author": "Chetan Verma <hello@chetanverma.com>",
+  "author": "Kieran Nehil",
   "dependencies": {
     "gatsby": "^2.26.1",
     "gatsby-image": "^2.5.0",
@@ -41,7 +41,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/kierannp/react-portfolio"
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
