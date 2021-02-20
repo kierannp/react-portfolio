@@ -91,9 +91,9 @@ export default {
   aboutParaOne:
     "I am pursuing degrees in Material Science Engineering and Statistics with minors in Computational Modeling and Computer Science. I really like integrating cross-disciplinary skills to make cool stuff.",
   aboutParaTwo:
-    "It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "I am a disciplined individual who enjoys setting and working toward goals that challenge me and cultivate the understanding and forethought needed to effect progress.",
   aboutParaThree:
-    "It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    "While balancing training and research, I also managed to take three graduate engineering and statistics classes, three undergraduate honors math classes, and three honors chemistry and physics classes. I began teaching myself machine learning at the start of my sophomore year of college, and because I found the topic so interesting, I decided to take a graduate course on artificial neural networks.",
   aboutImage:
     portfolioImage,
 
@@ -108,37 +108,37 @@ export default {
       id: 1,
       img: pythonIcon,
       para:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+        "This is the language I feel I am most proficient at. I have been using python for close to 4 years at this point, mostly dealing data processing and analysis.",
     },
     {
       id: 2,
       img: cppIcon,
       para:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+        "With C++ I am proficient at making fast, readable code. I have worked on projects using this language and find it the ideal choice for applications requiring top performance.",
     },
     {
       id: 3,
       img: tfIcon,
       para:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+        "I have worked with tensorflow for around 2 years now. I am proficient in creating neural network models, using the functional api, and basic subclassing. This framework is my choice for any deep learning problems.",
     },
     {
       id: 4,
       img: reactIcon,
       para:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+        `I have some experience with this "framework" such as this website. `,
     },
     {
       id: 5,
       img: jsIcon,
       para:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+        "I am proficient with this language, but want to learn more!",
     },
     {
       id: 6,
       img: rIcon,
       para:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+        "I am proficient with this statistics focused language, but feel it is often left for python.",
     },
   ],
 
@@ -148,12 +148,12 @@ export default {
 
   promotionHeading: "Heading",
   promotionPara:
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "Thanks for visiting my portfolio!",
   // End Promotion Section -----------------
 
   //   Contact Section --------------
 
-  contactSubHeading: "Let's create your next experience together",
+  contactSubHeading: "Let's create something together!",
   social: [
     // Add Or Remove The Link Accordingly
     { img: githubIcon, url: "https://github.com/kierannp" },
