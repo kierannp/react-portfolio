@@ -6309,7 +6309,7 @@
     "lodash" "^4.17.20"
     "micromatch" "^4.0.2"
 
-"gatsby-plugin-manifest@^2.6.1":
+"gatsby-plugin-manifest@^2.7.0":
   "integrity" "sha512-6EG4Qth11C9ZLwgxQFl5TKAjtLAPoeteF68f+CWimv45wNxZausDbppFJgpOBmmPDucPiA62GSq30JT8icDJOQ=="
   "resolved" "https://registry.npmjs.org/gatsby-plugin-manifest/-/gatsby-plugin-manifest-2.7.0.tgz"
   "version" "2.7.0"
