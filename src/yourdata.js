@@ -9,6 +9,7 @@ import cppIcon from "./images/c-logo-icon-28389.png"
 import tfIcon from "./images/tensorflow_logo.png"
 import rIcon from "./images/Rlogo.svg"
 import arwinLogo from "./images/cfa18c749773c0e01b3aae98f82f1f07.png"
+import manifold from "./images/manifold.gif"
 // Social Icon
 import githubIcon from "./images/github.svg"
 
@@ -61,7 +62,7 @@ export default {
       para:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.", // Add Your Service Type Here
       imageSrc:
-        "https://images.unsplash.com/photo-1504083898675-c896ecdae86e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjJ8fHBhc3RlbHxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=400&q=60",
+        manifold,
       url: "http://chetanverma.com/",
     },
     {
