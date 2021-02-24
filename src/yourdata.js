@@ -58,12 +58,12 @@ export default {
     },
     {
       id: 3, //DO NOT CHANGE THIS (Please)😅
-      title: "Project Three", //Project Title - Add Your Project Title Here
+      title: "Manifold-Slider", //Project Title - Add Your Project Title Here
       para:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.", // Add Your Service Type Here
+        "I built this app using a model trained in python, then converted to tensorflowjs, then built the app with react.js", // Add Your Service Type Here
       imageSrc:
         manifold,
-      url: "http://chetanverma.com/",
+      url: "https://github.com/kierannp/vae-manifold-slider",
     },
     {
       id: 4, //DO NOT CHANGE THIS (Please)😅
