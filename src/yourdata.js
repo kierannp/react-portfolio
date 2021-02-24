@@ -63,7 +63,7 @@ export default {
         "I built this app using a model trained in python, then converted to tensorflowjs, then built the app with react.js", // Add Your Service Type Here
       imageSrc:
         manifold,
-      url: "https://github.com/kierannp/vae-manifold-slider",
+      url: "https://eloquent-wing-bb67a4.netlify.app/",
     },
     {
       id: 4, //DO NOT CHANGE THIS (Please)😅
