@@ -65,15 +65,15 @@ export default {
         manifold,
       url: "https://eloquent-wing-bb67a4.netlify.app/",
     },
-    {
-      id: 4, //DO NOT CHANGE THIS (Please)😅
-      title: "Project Four", //Project Title - Add Your Project Title Here
-      para:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.", // Add Your Service Type Here
-      imageSrc:
-        "https://images.unsplash.com/photo-1492171983775-a51717616c0d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8NjB8fHBhc3RlbHxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=400&q=60",
-      url: "http://chetanverma.com/",
-    },
+    // {
+    //   id: 4, //DO NOT CHANGE THIS (Please)😅
+    //   title: "Project Four", //Project Title - Add Your Project Title Here
+    //   para:
+    //     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.", // Add Your Service Type Here
+    //   imageSrc:
+    //     "https://images.unsplash.com/photo-1492171983775-a51717616c0d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8NjB8fHBhc3RlbHxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=400&q=60",
+    //   url: "http://chetanverma.com/",
+    // },
     /*
     If You Want To Add More Project just Copy and Paste This At The End (Update the id Respectively)
     ,{
