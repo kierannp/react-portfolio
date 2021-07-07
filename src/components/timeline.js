@@ -11,7 +11,7 @@ import Typography from '@material-ui/core/Typography';
 
 const TimeLine = () => {
   return (
-    <Timeline>
+    <Timeline align="alternate">
       <TimelineItem>
         <TimelineOppositeContent>
             <Typography color="textSecondary">0</Typography>
