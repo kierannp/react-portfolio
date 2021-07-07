@@ -5,6 +5,8 @@
   "version": "0.1.0",
   "author": "Kieran Nehil",
   "dependencies": {
+    "@material-ui/core": "^4.12.1",
+    "@material-ui/lab": "^4.0.0-alpha.60",
     "gatsby": "^2.26.1",
     "gatsby-image": "^2.5.0",
     "gatsby-plugin-manifest": "^2.7.0",
@@ -15,13 +17,14 @@
     "gatsby-plugin-smoothscroll": "^1.2.0",
     "gatsby-source-filesystem": "^2.5.0",
     "gatsby-transformer-sharp": "^2.6.0",
-    "node-sass": "^4.0.0",
+    "node-sass": "^4.14.0",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^6.1.0",
     "react-reveal": "^1.2.2",
-    "react-scroll": "^1.8.1"
+    "react-scroll": "^1.8.1",
+    "sass": "^1.35.1"
   },
   "devDependencies": {
     "prettier": "2.1.2"

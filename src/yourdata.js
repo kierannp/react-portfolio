@@ -139,7 +139,7 @@ export default {
       id: 6,
       img: rIcon,
       para:
-        "I am proficient with this statistics focused language, but feel it is often left for python.",
+        "I am proficient with this statistics focused language, but feel it is often inferior to python.",
     },
   ],
 
@@ -147,7 +147,7 @@ export default {
 
   //   Promotion Section --------------------------
 
-  promotionHeading: "Heading",
+  promotionHeading: "Appreciation",
   promotionPara:
     "Thanks for visiting my portfolio!",
   // End Promotion Section -----------------
