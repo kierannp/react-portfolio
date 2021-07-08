@@ -20,7 +20,7 @@ const TimeLine = () => {
           <TimelineDot variant="outlined" color="secondary"/>
           <TimelineConnector />
         </TimelineSeparator>
-        <TimelineContent>Born in Michigan to Lesbian Parents Catherine Nehil and Annette Puleo</TimelineContent>
+        <TimelineContent>Birth Michigan</TimelineContent>
       </TimelineItem>
       <TimelineItem>
         <TimelineOppositeContent>
@@ -34,7 +34,7 @@ const TimeLine = () => {
       </TimelineItem>
       <TimelineItem>
         <TimelineOppositeContent>
-            <Typography color="textSecondary">18 - 19</Typography>
+            <Typography color="textSecondary">18</Typography>
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineDot variant="outlined" color="secondary"/>
