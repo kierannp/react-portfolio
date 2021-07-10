@@ -1,7 +1,7 @@
 // Skills Icons
 import reactIcon from "./images/react.svg"
 import jsIcon from "./images/javascript.svg"
-import portfolioImage from "./images/selfie.png"
+import portfolioImage from "./images/woods_portrait.jpg"
 import blobImage from "./images/image.png"
 import thinImage from "./images/thin_film.gif"
 import pythonIcon from "./images/python-5.svg"
@@ -12,6 +12,7 @@ import arwinLogo from "./images/cfa18c749773c0e01b3aae98f82f1f07.png"
 import manifold from "./images/manifold.gif"
 // Social Icon
 import githubIcon from "./images/github.svg"
+import linkedinIcon from "./images/linkedin.svg"
 
 export default {
 
@@ -157,7 +158,12 @@ export default {
   contactSubHeading: "Let's create something together!",
   social: [
     // Add Or Remove The Link Accordingly
-    { img: githubIcon, url: "https://github.com/kierannp" },
+    { 
+      img: githubIcon, url: "https://github.com/kierannp"
+    },
+    {
+      img: linkedinIcon, url: "https://www.linkedin.com/in/kieran-nehil-puleo-b4a16a10b/"
+    }
   ],
 
   // End Contact Section ---------------
