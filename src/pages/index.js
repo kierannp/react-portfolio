@@ -1,5 +1,4 @@
-import React from "react"
-
+import React from "react";
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 // Components
@@ -10,6 +9,7 @@ import Skills from "../components/skills"
 import Promotion from "../components/Promotion"
 import Footer from "../components/Footer"
 import TimeLine from "../components/timeline"
+import Maps from "../components/maps"
 
 const IndexPage = () => (
   <Layout>
@@ -18,6 +18,7 @@ const IndexPage = () => (
     <Work></Work>
     <About></About>
     <TimeLine></TimeLine>
+    <Maps></Maps>
     <Skills></Skills>
     <Promotion></Promotion>
     <Footer></Footer>
