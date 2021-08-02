@@ -13,6 +13,7 @@ import manifold from "./images/manifold.gif"
 // Social Icon
 import githubIcon from "./images/github.svg"
 import linkedinIcon from "./images/linkedin.svg"
+import nietzscheIcon from "./images/Nietzsche.jpeg"
 
 export default {
 
@@ -39,17 +40,9 @@ export default {
   navLogo: arwinLogo,
   // Work Section ------------------------
   projects: [
+
     {
-      id: 1, //DO NOT CHANGE THIS (Please)😅
-      title: "XRD Blob Identification", //Project Title - Add Your Project Title Here
-      para:
-        "This research project was on improving diffraction maxima identification in XRD data.", // Add Your Service Type Here
-      imageSrc:
-        blobImage,
-      url: "http://chetanverma.com/",
-    },
-    {
-      id: 2, //DO NOT CHANGE THIS (Please)😅
+      id: 1, 
       title: "Fick1d solid state diffusion simulation package", //Project Title - Add Your Project Title Here
       para:
         "This is a Python package that I created in my free time. I saw that there was no open source python package for performing diffusion simulations with Fick's Second law of diffusion. This package could be used to model Solid state diffusion in the specified geometries.",
@@ -58,7 +51,16 @@ export default {
       url: "https://github.com/kierannp/fick1d",
     },
     {
-      id: 3, //DO NOT CHANGE THIS (Please)😅
+      id: 2, 
+      title: "Nietzsche Psychoanlaysis", //Project Title - Add Your Project Title Here
+      para:
+        "Psychoanalysis of Fredrich Nietzsche", // Add Your Service Type Here
+      imageSrc:
+        nietzscheIcon,
+      url: "https://docs.google.com/document/d/e/2PACX-1vTVDnKTHoz5322hX29S4NCm0h_yrSdAcJLDa5-1TNrvRik325IR3WbvWmC1LGnqA23Boem5ddio2ZD1/pub",
+    },
+    {
+      id: 3,
       title: "Manifold-Slider", //Project Title - Add Your Project Title Here
       para:
         "I built this app using a model trained in python, then converted to tensorflowjs, then built the app with react.js", // Add Your Service Type Here
@@ -66,15 +68,16 @@ export default {
         manifold,
       url: "https://github.com/kierannp/vae-manifold-slider",
     },
-    // {
-    //   id: 4, //DO NOT CHANGE THIS (Please)😅
-    //   title: "Project Four", //Project Title - Add Your Project Title Here
-    //   para:
-    //     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.", // Add Your Service Type Here
-    //   imageSrc:
-    //     "https://images.unsplash.com/photo-1492171983775-a51717616c0d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8NjB8fHBhc3RlbHxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=400&q=60",
-    //   url: "http://chetanverma.com/",
-    // },
+    {
+      id: 4, 
+      title: "XRD Blob Identification", //Project Title - Add Your Project Title Here
+      para:
+        "This research project was on improving diffraction maxima identification in XRD data.", // Add Your Service Type Here
+      imageSrc:
+        blobImage,
+      url: "https://github.com/kierannp",
+    },
+
     /*
     If You Want To Add More Project just Copy and Paste This At The End (Update the id Respectively)
     ,{
@@ -91,11 +94,11 @@ export default {
 
   // About Secton --------------
   aboutParaOne:
-    "I am pursuing degrees in Material Science Engineering and Statistics with minors in Computational Modeling and Computer Science. I really like integrating cross-disciplinary skills to make cool stuff.",
+    "I haved graduated with Undergraduate with degrees in Material Science Engineering and Statistics, with minors in Computational Modeling and Computer Science. I really like integrating cross-disciplinary skills to make cool stuff.",
   aboutParaTwo:
-    "I am a disciplined individual who enjoys setting and working toward goals that challenge me and cultivate the understanding and forethought needed to effect progress.",
+    "I am a disciplined and diverse person who enjoys setting and working toward goals that challenge me and cultivates the understanding needed to effect progress.",
   aboutParaThree:
-    "While balancing training and research, I also managed to take three graduate engineering and statistics classes, three undergraduate honors math classes, and three honors chemistry and physics classes. I began teaching myself machine learning at the start of my sophomore year of college, and because I found the topic so interesting, I decided to take a graduate course on artificial neural networks.",
+    "I am starting my my graduate program at Vanderbilt University in Interdiscipinary Material Science, a multidisciplinary domain focused on material science; for me, roughly a culmination of computer science and physical materials",
   aboutImage:
     portfolioImage,
 
