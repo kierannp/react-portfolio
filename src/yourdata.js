@@ -23,13 +23,13 @@ export default {
     //Line 1 For Header
     "Building things with",
     //Line 2 For Header
-    "Mat Sci, ML,",
+    "Logic",
     //Line 3 For Header
     "and Persistence",
   ],
   //   Header Paragraph
   headerParagraph:
-    "I'm an engineer with lots of interests and ideas",
+    "I'm an engineer with diverse interests, and plans to make innovations off of those interests",
 
   //Contact Email
   contactEmail: "nehilkieran@gmail.com",
@@ -40,21 +40,20 @@ export default {
   navLogo: arwinLogo,
   // Work Section ------------------------
   projects: [
-
     {
       id: 1, 
-      title: "Fick1d solid state diffusion simulation package", //Project Title - Add Your Project Title Here
+      title: "XRD Blob Identification", //Project Title - Add Your Project Title Here
       para:
-        "This is a Python package that I created in my free time. I saw that there was no open source python package for performing diffusion simulations with Fick's Second law of diffusion. This package could be used to model Solid state diffusion in the specified geometries.",
+        "This research project was on improving diffraction maxima identification in XRD data.", // Add Your Service Type Here
       imageSrc:
-        thinImage,
-      url: "https://github.com/kierannp/fick1d",
+        blobImage,
+      url: "https://github.com/kierannp",
     },
     {
       id: 2, 
-      title: "Nietzsche Psychoanlaysis", //Project Title - Add Your Project Title Here
+      title: "Nietzsche's Rebirth as Zarathustra", //Project Title - Add Your Project Title Here
       para:
-        "Psychoanalysis of Fredrich Nietzsche", // Add Your Service Type Here
+        "Based off of the work of Carl Jung and his analysis of Fredrich Nietzsche, I attempt to make sense of Nietzsche's regression to psychosis", // Add Your Service Type Here
       imageSrc:
         nietzscheIcon,
       url: "https://docs.google.com/document/d/e/2PACX-1vTVDnKTHoz5322hX29S4NCm0h_yrSdAcJLDa5-1TNrvRik325IR3WbvWmC1LGnqA23Boem5ddio2ZD1/pub",
@@ -63,21 +62,20 @@ export default {
       id: 3,
       title: "Manifold-Slider", //Project Title - Add Your Project Title Here
       para:
-        "I built this app using a model trained in python, then converted to tensorflowjs, then built the app with react.js", // Add Your Service Type Here
+        "I trained a variational autoencoder neural network in python, then converted to tensorflow.js a python to javascript neural network converter, then built an interface and app with react.js to interact with the neural net", // Add Your Service Type Here
       imageSrc:
         manifold,
       url: "https://github.com/kierannp/vae-manifold-slider",
     },
     {
       id: 4, 
-      title: "XRD Blob Identification", //Project Title - Add Your Project Title Here
+      title: "Fick1d solid state diffusion simulation package", //Project Title - Add Your Project Title Here
       para:
-        "This research project was on improving diffraction maxima identification in XRD data.", // Add Your Service Type Here
+        "This is a Python package that I created in my free time. I saw that there was no open source python package for performing diffusion simulations with Fick's Second law of diffusion. This package could be used to model Solid state diffusion in the specified geometries.",
       imageSrc:
-        blobImage,
-      url: "https://github.com/kierannp",
+        thinImage,
+      url: "https://github.com/kierannp/fick1d",
     },
-
     /*
     If You Want To Add More Project just Copy and Paste This At The End (Update the id Respectively)
     ,{
