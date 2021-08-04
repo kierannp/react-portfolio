@@ -21,11 +21,11 @@ export default {
   name: "Kieran",
   headerTagline: [
     //Line 1 For Header
-    "Building things with",
+    "Building Things",
     //Line 2 For Header
-    "Logic",
+    "using",
     //Line 3 For Header
-    "and Persistence",
+    "Logic and Persistence",
   ],
   //   Header Paragraph
   headerParagraph:

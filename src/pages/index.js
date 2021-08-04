@@ -9,7 +9,8 @@ import Skills from "../components/skills"
 import Promotion from "../components/Promotion"
 import Footer from "../components/Footer"
 import TimeLine from "../components/timeline"
-import Maps from "../components/maps"
+import Map from "../components/map"
+import Fade from "react-reveal/Fade"
 
 const IndexPage = () => (
   <Layout>
@@ -18,7 +19,12 @@ const IndexPage = () => (
     <Work></Work>
     <About></About>
     <TimeLine></TimeLine>
-    <Maps></Maps>
+    <div className='map-wrapper'>
+      <Fade bottom cascade>
+        <h1>Adventures</h1>
+      </Fade>
+    </div>
+    <Map></Map>
     <Skills></Skills>
     <Promotion></Promotion>
     <Footer></Footer>
