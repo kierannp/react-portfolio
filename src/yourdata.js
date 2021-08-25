@@ -1,7 +1,7 @@
 // Skills Icons
 import reactIcon from "./images/react.svg"
 import jsIcon from "./images/javascript.svg"
-import portfolioImage from "./images/woods_portrait.jpg"
+import portfolioImage from "./images/portrait.jpg"
 import blobImage from "./images/image.png"
 import thinImage from "./images/thin_film.gif"
 import pythonIcon from "./images/python-5.svg"
