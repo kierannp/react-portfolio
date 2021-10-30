@@ -30,7 +30,7 @@ const TimeLine = () => {
           <TimelineDot variant="outlined" color="secondary"/>
           <TimelineConnector />
         </TimelineSeparator>
-        <TimelineContent>Slogged Through Highschool</TimelineContent>
+        <TimelineContent>Got Through Highschool</TimelineContent>
       </TimelineItem>
       <TimelineItem>
         <TimelineOppositeContent>

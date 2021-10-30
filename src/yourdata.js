@@ -92,11 +92,11 @@ export default {
 
   // About Secton --------------
   aboutParaOne:
-    "I haved graduated with Undergraduate with degrees in Material Science Engineering and Statistics, with minors in Computational Modeling and Computer Science. I really like integrating cross-disciplinary skills to make cool stuff.",
+    "I got Undergraduate with degrees in Material Science Engineering and Statistics, and minors in Computational Modeling and Computer Science. I like integrating cross-disciplinary skills to make cool stuff.",
   aboutParaTwo:
-    "I am a disciplined and diverse person who enjoys setting and working toward goals that challenge me and cultivates the understanding needed to effect progress.",
+    "I am a person who enjoys setting and working toward goals that challenge and help me grow into a better person.",
   aboutParaThree:
-    "I am starting my my graduate program at Vanderbilt University in Interdiscipinary Material Science, a multidisciplinary domain focused on material science; for me, roughly a culmination of computer science and physical materials",
+    "I am starting my graduate program at Vanderbilt University in Interdiscipinary Material Science, a multidisciplinary domain focused on material science; for me, roughly a culmination of computer science and physical materials",
   aboutImage:
     portfolioImage,
 
@@ -111,7 +111,7 @@ export default {
       id: 1,
       img: pythonIcon,
       para:
-        "This is the language I feel I am most proficient at. I have been using python for close to 4 years at this point, mostly dealing data processing and analysis.",
+        "This is my primary language. I have been using python for close to 4 years at this point, mostly dealing modeling.",
     },
     {
       id: 2,
