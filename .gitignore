@@ -2,3 +2,5 @@ node_modules
 .git
 .cache
 .env
+.DS_Store
+.gz

@@ -2,18 +2,20 @@
 import reactIcon from "./images/react.svg"
 import jsIcon from "./images/javascript.svg"
 import portfolioImage from "./images/portrait.jpg"
-import blobImage from "./images/image.png"
-import thinImage from "./images/thin_film.gif"
 import pythonIcon from "./images/python-5.svg"
 import cppIcon from "./images/c-logo-icon-28389.png"
 import tfIcon from "./images/tensorflow_logo.png"
 import rIcon from "./images/Rlogo.svg"
-import arwinLogo from "./images/cfa18c749773c0e01b3aae98f82f1f07.png"
-import manifold from "./images/manifold.gif"
 // Social Icon
 import githubIcon from "./images/github.svg"
 import linkedinIcon from "./images/linkedin.svg"
+import arwinLogo from "./images/cfa18c749773c0e01b3aae98f82f1f07.png"
+//Project Images
+import manifold from "./images/manifold.gif"
+import blobImage from "./images/image.png"
+import thinImage from "./images/thin_film.gif"
 import nietzscheIcon from "./images/Nietzsche.jpeg"
+import petriGif from "./images/PetriNet.gif"
 
 export default {
 
@@ -29,7 +31,7 @@ export default {
   ],
   //   Header Paragraph
   headerParagraph:
-    "I'm an engineer with diverse interests, and plans to make innovations off of those interests",
+    "I'm a PhD student in Interdisciplinary Material Science at Vanderbilt University, and plan to make innovations from the things I learn",
 
   //Contact Email
   contactEmail: "nehilkieran@gmail.com",
@@ -69,34 +71,31 @@ export default {
     },
     {
       id: 4, 
-      title: "Fick1d solid state diffusion simulation package", //Project Title - Add Your Project Title Here
+      title: "1D Fick Soltion for Solid State Diffusion python package", //Project Title - Add Your Project Title Here
       para:
         "This is a Python package that I created in my free time. I saw that there was no open source python package for performing diffusion simulations with Fick's Second law of diffusion. This package could be used to model Solid state diffusion in the specified geometries.",
       imageSrc:
         thinImage,
       url: "https://github.com/kierannp/fick1d",
     },
-    /*
-    If You Want To Add More Project just Copy and Paste This At The End (Update the id Respectively)
-    ,{
+    {
         id: 5,
-        title: 'Project Five',
-        para: 'Something Amazing',
-        imageSrc: "",
-        url: ''
+        title: "Petri Net Design Studio",
+        para: "This is a design studio for building and simulating petri nets",
+        imageSrc: petriGif,
+        url: "https://github.com/kierannp/PetriNet"
     }
-    */
   ],
 
   // End Work Section -----------------------
 
   // About Secton --------------
   aboutParaOne:
-    "I got Undergraduate with degrees in Material Science Engineering and Statistics, and minors in Computational Modeling and Computer Science. I like integrating cross-disciplinary skills to make cool stuff.",
+    "I am starting my graduate program at Vanderbilt University in Interdiscipinary Material Science, a multidisciplinary domain focused on material science; for me, roughly a culmination of computer science and physical materials",
   aboutParaTwo:
     "I am a person who enjoys setting and working toward goals that challenge and help me grow into a better person.",
   aboutParaThree:
-    "I am starting my graduate program at Vanderbilt University in Interdiscipinary Material Science, a multidisciplinary domain focused on material science; for me, roughly a culmination of computer science and physical materials",
+    "I got Undergraduate degrees in Material Science Engineering and Statistics, and minors in Computational Modeling and Computer Science. I like integrating cross-disciplinary skills to make cool stuff.",
   aboutImage:
     portfolioImage,
 
