@@ -25,13 +25,13 @@ export default {
     //Line 1 For Header
     "Building Things",
     //Line 2 For Header
-    "using",
+    "With",
     //Line 3 For Header
-    "Logic and Persistence",
+    "Persistence",
   ],
   //   Header Paragraph
   headerParagraph:
-    "I'm a PhD student in Interdisciplinary Material Science at Vanderbilt University, and plan to make innovations from the things I learn",
+    "I'm a PhD student in Interdisciplinary Material Science at Vanderbilt University, I in computational material science, machine learning, and microfluidics",
 
   //Contact Email
   contactEmail: "nehilkieran@gmail.com",
@@ -49,7 +49,7 @@ export default {
         "This research project was on improving diffraction maxima identification in XRD data.", // Add Your Service Type Here
       imageSrc:
         blobImage,
-      url: "https://github.com/kierannp",
+      url: "https://compmatermech.wordpress.com/2022/03/03/tms-2022/",
     },
     {
       id: 2, 
