@@ -3,7 +3,8 @@
   "private": true,
   "description": "Portfolio for Kieran Nehil",
   "version": "0.1.0",
-  "author": "Kieran Nehil",
+  "author": "Kieran Nehil-Puleo",
+  "homepage": "https://kierannp.github.io",
   "dependencies": {
     "@material-ui/core": "^4.12.1",
     "@material-ui/lab": "^4.0.0-alpha.60",
@@ -24,9 +25,11 @@
     "react-helmet": "^6.1.0",
     "react-reveal": "^1.2.2",
     "react-scroll": "^1.8.1",
-    "sass": "^1.35.1"
+    "sass": "^1.35.1",
+    "source-map": "^0.8.0-beta.0"
   },
   "devDependencies": {
+    "gh-pages": "^6.0.0",
     "gulp-sass": "^5.1.0",
     "prettier": "2.1.2"
   },
@@ -41,7 +44,9 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -49,5 +54,8 @@
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
+  },
+  "resolutions": {
+    "source-map": "^0.8.0-beta.0"
   }
 }
