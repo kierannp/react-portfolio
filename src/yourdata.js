@@ -16,6 +16,7 @@ import blobImage from "./images/image.png"
 import thinImage from "./images/thin_film.gif"
 import nietzscheIcon from "./images/Nietzsche.jpeg"
 import petriGif from "./images/PetriNet.gif"
+import powderImage from "./images/powder_bird.png"
 
 export default {
 
@@ -23,15 +24,15 @@ export default {
   name: "Kieran",
   headerTagline: [
     //Line 1 For Header
-    "Building Things",
+    "Build",
     //Line 2 For Header
     "With",
     //Line 3 For Header
-    "Persistence",
+    "Persistance",
   ],
   //   Header Paragraph
   headerParagraph:
-    "I'm a PhD student in Interdisciplinary Material Science at Vanderbilt University, I in computational material science, machine learning, and microfluidics",
+    "I'm a wannabe polymath with interests in machine learning, multi-scale modeling, automation, and philosophy",
 
   //Contact Email
   contactEmail: "nehilkieran@gmail.com",
@@ -43,16 +44,23 @@ export default {
   // Work Section ------------------------
   projects: [
     {
-      id: 1, 
-      title: "XRD Blob Identification", //Project Title - Add Your Project Title Here
-      para:
-        "This research project was on improving diffraction maxima identification in XRD data.", // Add Your Service Type Here
-      imageSrc:
-        blobImage,
-      url: "https://compmatermech.wordpress.com/2022/03/03/tms-2022/",
+      id: 1,
+      title: "Petri Net Design Studio",
+      para: "This is a design studio for building and simulating petri nets",
+      imageSrc: 
+        petriGif,
+      url: "https://github.com/kierannp/PetriNet"
     },
     {
-      id: 2, 
+      id: 2,
+      title: "Open-source Powder Dispenser/Hopper",
+      para: "An open-source design of a powder dispenser for formulating powdery samples from multiple components",
+      imageSrc: 
+        powderImage,
+      url: "https://github.com/kierannp/PetriNet"
+    },
+    {
+      id: 3, 
       title: "Nietzsche's Rebirth as Zarathustra", //Project Title - Add Your Project Title Here
       para:
         "Based off of the work of Carl Jung and his analysis of Fredrich Nietzsche, I attempt to make sense of Nietzsche's regression to psychosis", // Add Your Service Type Here
@@ -61,7 +69,7 @@ export default {
       url: "https://docs.google.com/document/d/e/2PACX-1vTVDnKTHoz5322hX29S4NCm0h_yrSdAcJLDa5-1TNrvRik325IR3WbvWmC1LGnqA23Boem5ddio2ZD1/pub",
     },
     {
-      id: 3,
+      id: 4,
       title: "Manifold-Slider", //Project Title - Add Your Project Title Here
       para:
         "I trained a variational autoencoder neural network in python, then converted to tensorflow.js a python to javascript neural network converter, then built an interface and app with react.js to interact with the neural net", // Add Your Service Type Here
@@ -70,7 +78,7 @@ export default {
       url: "https://github.com/kierannp/vae-manifold-slider",
     },
     {
-      id: 4, 
+      id: 5, 
       title: "1D Fick Soltion for Solid State Diffusion python package", //Project Title - Add Your Project Title Here
       para:
         "This is a Python package that I created in my free time. I saw that there was no open source python package for performing diffusion simulations with Fick's Second law of diffusion. This package could be used to model Solid state diffusion in the specified geometries.",
@@ -79,19 +87,21 @@ export default {
       url: "https://github.com/kierannp/fick1d",
     },
     {
-        id: 5,
-        title: "Petri Net Design Studio",
-        para: "This is a design studio for building and simulating petri nets",
-        imageSrc: petriGif,
-        url: "https://github.com/kierannp/PetriNet"
-    }
+      id: 6, 
+      title: "XRD Blob Identification", //Project Title - Add Your Project Title Here
+      para:
+        "This research project was on improving diffraction maxima identification in XRD data.", // Add Your Service Type Here
+      imageSrc:
+        blobImage,
+      url: "https://compmatermech.wordpress.com/2022/03/03/tms-2022/",
+    },
   ],
 
   // End Work Section -----------------------
 
   // About Secton --------------
   aboutParaOne:
-    "I am starting my graduate program at Vanderbilt University in Interdiscipinary Material Science, a multidisciplinary domain focused on material science; for me, roughly a culmination of computer science and physical materials",
+    "I am a third year PhD student at Vanderbilt University in Interdiscipinary Material Science, a multidisciplinary domain focused on material science; for me, roughly a culmination of computer science and physical materials",
   aboutParaTwo:
     "I am a person who enjoys setting and working toward goals that challenge and help me grow into a better person.",
   aboutParaThree:
