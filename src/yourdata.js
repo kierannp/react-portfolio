@@ -4,7 +4,7 @@ import jsIcon from "./images/javascript.svg"
 import portfolioImage from "./images/portrait.jpg"
 import pythonIcon from "./images/python-5.svg"
 import cppIcon from "./images/c-logo-icon-28389.png"
-import tfIcon from "./images/tensorflow_logo.png"
+// import tfIcon from "./images/tensorflow_logo.png"
 import rIcon from "./images/Rlogo.svg"
 // Social Icon
 import githubIcon from "./images/github.svg"
@@ -23,12 +23,9 @@ export default {
   //   Header Details ---------------------
   name: "Kieran",
   headerTagline: [
-    //Line 1 For Header
-    "Build",
-    //Line 2 For Header
-    "With",
-    //Line 3 For Header
-    "Persistance",
+    "Building",
+    "By",
+    "Persevering",
   ],
   //   Header Paragraph
   headerParagraph:
@@ -57,7 +54,7 @@ export default {
       para: "An open-source design of a powder dispenser for formulating powdery samples from multiple components",
       imageSrc: 
         powderImage,
-      url: "https://github.com/kierannp/PetriNet"
+      url: "https://github.com/kierannp/open-powder-form"
     },
     {
       id: 3, 
@@ -103,7 +100,7 @@ export default {
   aboutParaOne:
     "I am a third year PhD student at Vanderbilt University in Interdiscipinary Material Science, a multidisciplinary domain focused on material science; for me, roughly a culmination of computer science and physical materials",
   aboutParaTwo:
-    "I am a person who enjoys setting and working toward goals that challenge and help me grow into a better person.",
+    "I am a person who enjoys setting and working toward goals that challenge me grow.",
   aboutParaThree:
     "I got Undergraduate degrees in Material Science Engineering and Statistics, and minors in Computational Modeling and Computer Science. I like integrating cross-disciplinary skills to make cool stuff.",
   aboutImage:
@@ -120,37 +117,19 @@ export default {
       id: 1,
       img: pythonIcon,
       para:
-        "This is my primary language. I have been using python for close to 4 years at this point, mostly dealing modeling.",
+        "This is my primary programming language. I use this to build machine learning models, scripts and packages for molecular simulations, and much more.",
     },
     {
       id: 2,
       img: cppIcon,
       para:
-        "With C++ I am proficient at making fast, readable code. I have worked on projects using this language and find it the ideal choice for applications requiring top performance.",
+        "This is my go to language for performance and hardware. I have worked on projects using this language and find it the ideal choice for applications requiring top performance.",
     },
     {
       id: 3,
-      img: tfIcon,
-      para:
-        "I have worked with tensorflow for around 2 years now. I am proficient in creating neural network models, using the functional api, and basic subclassing. This framework is my choice for any deep learning problems.",
-    },
-    {
-      id: 4,
-      img: reactIcon,
-      para:
-        `I have some experience with this "framework" such as this website. `,
-    },
-    {
-      id: 5,
       img: jsIcon,
       para:
-        "I am proficient with this language, but want to learn more!",
-    },
-    {
-      id: 6,
-      img: rIcon,
-      para:
-        "I am proficient with this statistics focused language, but feel it is often inferior to python.",
+        "This is my language for anything I want people that are non-programmers to use, such as this website.",
     },
   ],
 

@@ -20,18 +20,75 @@ const TimeLine = () => {
           <TimelineDot variant="outlined" color="secondary"/>
           <TimelineConnector />
         </TimelineSeparator>
-        <TimelineContent>Birth Michigan</TimelineContent>
+        <TimelineContent>Birth in Michigan to Catherine Nehil and Annette Puleo</TimelineContent>
       </TimelineItem>
+
       <TimelineItem>
         <TimelineOppositeContent>
-            <Typography color="textSecondary">14 - 18</Typography>
+            <Typography color="textSecondary">5</Typography>
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineDot variant="outlined" color="secondary"/>
           <TimelineConnector />
         </TimelineSeparator>
-        <TimelineContent>Got Through Highschool</TimelineContent>
+        <TimelineContent>Got Interested in Insects, Wanted to be an "Antomologist"</TimelineContent>
       </TimelineItem>
+
+      <TimelineItem>
+        <TimelineOppositeContent>
+            <Typography color="textSecondary">6</Typography>
+        </TimelineOppositeContent>
+        <TimelineSeparator>
+          <TimelineDot variant="outlined" color="secondary"/>
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent>First Existential Crisis: The Sun's Inevitable Extinguishment</TimelineContent>
+      </TimelineItem>
+
+      <TimelineItem>
+        <TimelineOppositeContent>
+            <Typography color="textSecondary">6.5</Typography>
+        </TimelineOppositeContent>
+        <TimelineSeparator>
+          <TimelineDot variant="outlined" color="secondary"/>
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent>Diagnosed with Learning Disability: Couldn't Read</TimelineContent>
+      </TimelineItem>
+
+      <TimelineItem>
+        <TimelineOppositeContent>
+            <Typography color="textSecondary">9</Typography>
+        </TimelineOppositeContent>
+        <TimelineSeparator>
+          <TimelineDot variant="outlined" color="secondary"/>
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent>Truly Gained Ability to Read</TimelineContent>
+      </TimelineItem>
+
+      <TimelineItem>
+        <TimelineOppositeContent>
+            <Typography color="textSecondary">12</Typography>
+        </TimelineOppositeContent>
+        <TimelineSeparator>
+          <TimelineDot variant="outlined" color="secondary"/>
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent>Got Interested in Homesteading, Started Building Stuff</TimelineContent>
+      </TimelineItem>
+
+      <TimelineItem>
+        <TimelineOppositeContent>
+            <Typography color="textSecondary">16</Typography>
+        </TimelineOppositeContent>
+        <TimelineSeparator>
+          <TimelineDot variant="outlined" color="secondary"/>
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent>Start of Depressive Episode</TimelineContent>
+      </TimelineItem>
+
       <TimelineItem>
         <TimelineOppositeContent>
             <Typography color="textSecondary">18</Typography>
@@ -40,8 +97,9 @@ const TimeLine = () => {
           <TimelineDot variant="outlined" color="secondary"/>
           <TimelineConnector />
         </TimelineSeparator>
-        <TimelineContent>Gap Year, Volenteered in Nepal and Uganda</TimelineContent>
+        <TimelineContent>Gap Year, Volenteered in Nepal and Uganda for 6 Months</TimelineContent>
       </TimelineItem>
+
       <TimelineItem>
         <TimelineOppositeContent>
             <Typography color="textSecondary">19</Typography>
@@ -50,8 +108,9 @@ const TimeLine = () => {
           <TimelineDot variant="outlined" color="secondary"/>
           <TimelineConnector />
         </TimelineSeparator>
-        <TimelineContent>Started Studying Material Science Engineering and Statistics at MSU</TimelineContent>
+        <TimelineContent>Started Undergrad in Material Science Engineering and Statistics at MSU</TimelineContent>
       </TimelineItem>
+
       <TimelineItem>
         <TimelineOppositeContent>
             <Typography color="textSecondary">20</Typography>
@@ -60,7 +119,7 @@ const TimeLine = () => {
           <TimelineDot variant="outlined" color="secondary"/>
           <TimelineConnector />
         </TimelineSeparator>
-        <TimelineContent>Began Self-Teaching Machine Learning</TimelineContent>
+        <TimelineContent>Got Interested in Machine Learning</TimelineContent>
       </TimelineItem>
       <TimelineItem>
         <TimelineOppositeContent>
@@ -70,7 +129,7 @@ const TimeLine = () => {
           <TimelineDot variant="outlined" color="secondary"/>
           <TimelineConnector />
         </TimelineSeparator>
-        <TimelineContent>Internship at Textron</TimelineContent>
+        <TimelineContent>Interned at Textron, Saw the Utility of Computer Science</TimelineContent>
       </TimelineItem>
       <TimelineItem>
         <TimelineOppositeContent>
@@ -80,8 +139,9 @@ const TimeLine = () => {
           <TimelineDot variant="outlined" color="secondary"/>
           <TimelineConnector />
         </TimelineSeparator>
-        <TimelineContent>Covid Induced Life Reflection, Began Studying Jungian Psychology</TimelineContent>
+        <TimelineContent>Got Interested in Jungian Psychology</TimelineContent>
       </TimelineItem>
+
       <TimelineItem>
         <TimelineOppositeContent>
             <Typography color="textSecondary">23</Typography>
@@ -90,8 +150,9 @@ const TimeLine = () => {
           <TimelineDot variant="outlined" color="secondary"/>
           <TimelineConnector />
         </TimelineSeparator>
-        <TimelineContent>Finished Undergrad at MSU</TimelineContent>
+        <TimelineContent>Finished Undergrad at MSU, Honors in Both Degrees with 3.8/4.0 GPA</TimelineContent>
       </TimelineItem>
+
       <TimelineItem>
         <TimelineOppositeContent>
             <Typography color="textSecondary">23</Typography>
@@ -101,6 +162,17 @@ const TimeLine = () => {
         </TimelineSeparator>
         <TimelineContent>Started PhD in Interdisciplinary Material Science at Vanderbilt University</TimelineContent>
       </TimelineItem>
+
+      <TimelineItem>
+        <TimelineOppositeContent>
+            <Typography color="textSecondary">24</Typography>
+        </TimelineOppositeContent>
+        <TimelineSeparator>
+          <TimelineDot variant="outlined" color="secondary"/>
+        </TimelineSeparator>
+        <TimelineContent>Won the NSF Graduate Research Fellowship</TimelineContent>
+      </TimelineItem>
+
     </Timeline>
   );
 }
