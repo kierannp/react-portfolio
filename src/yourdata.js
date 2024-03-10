@@ -29,7 +29,7 @@ export default {
   ],
   //   Header Paragraph
   headerParagraph:
-    "I'm a wannabe polymath with interests in machine learning, multi-scale modeling, automation, and philosophy",
+    "I'm a polymath with interests in machine learning, multi-scale modeling, and philosophy",
 
   //Contact Email
   contactEmail: "nehilkieran@gmail.com",
@@ -123,7 +123,7 @@ export default {
       id: 2,
       img: cppIcon,
       para:
-        "This is my go to language for performance and hardware. I have worked on projects using this language and find it the ideal choice for applications requiring top performance.",
+        "This is my go to language for performance and hardware.",
     },
     {
       id: 3,

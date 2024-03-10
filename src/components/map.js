@@ -31,7 +31,10 @@ const mapData = [
    { lat: 20.6534, lng: -105.2253 }, // mexico :        
    { lat: 51.2538 , lng : -85.3232}, // ontario :       
    { lat: .3476, lng : 32.5825 }, // kampala :       
-   {lat: 31.2304, lng: 121.4737} // shanghai:       
+   {lat: 31.2304, lng: 121.4737}, // shanghai:       
+   {lat: 49.9929, lng: 8.2473}, // frankfurt:
+    {lat: 51.5074, lng: -0.1278}, // london:
+    {lat: 55.9533, lng: 3.1883}, // edinburgh:
 ];
 
 
