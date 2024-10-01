@@ -90,7 +90,7 @@ export default {
         "This research project was on improving diffraction maxima identification in XRD data.", // Add Your Service Type Here
       imageSrc:
         blobImage,
-      url: "https://compmatermech.wordpress.com/2022/03/03/tms-2022/",
+      url: "https://www.dropbox.com/s/ihvajhpylheg90f/EisNehTis_TMS2022.pdf?dl=1",
     },
   ],
 
