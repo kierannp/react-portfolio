@@ -23,6 +23,7 @@ const mapData = [
    { lat: 27.6648, lng: -81.5158 }, // fl :            
    { lat: 35.2220, lng: -101.8313 }, // amarillo :      
    { lat: 44.4280, lng: -110.5885 }, // yellowstone :   
+   {lat: 40.76, lng: -111.89}, // saltlakecity:
    //misc
    { lat: 41.8781, lng: -87.6298 }, // chicago :       
    { lat: -1.2420, lng: 29.9856 }, // kabale :        

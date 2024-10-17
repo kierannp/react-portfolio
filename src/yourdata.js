@@ -31,7 +31,7 @@ export default {
   headerParagraph:
     "I'm a polymath with interests in machine learning, multi-scale modeling, and philosophy",
 
-  //Contact Email
+  // Contact Email
   contactEmail: "nehilkieran@gmail.com",
 
   // End Header Details -----------------------
