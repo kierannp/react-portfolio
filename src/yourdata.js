@@ -17,6 +17,8 @@ import thinImage from "./images/thin_film.gif"
 import nietzscheIcon from "./images/Nietzsche.jpeg"
 import petriGif from "./images/PetriNet.gif"
 import powderImage from "./images/powder_bird.png"
+import patentIcon from "./images/patent.svg"
+import journalIcon from "./images/iegnn.svg"
 
 export default {
 
@@ -29,7 +31,7 @@ export default {
   ],
   //   Header Paragraph
   headerParagraph:
-    "I'm a polymath with interests in machine learning, multi-scale modeling, and philosophy",
+    "I am a Ph.D. candidate in Computational Materials Science at Vanderbilt University, working in the Cummings and Yang groups, where my research focuses on developing autonomous methods to design materials through the integration of machine learning and molecular simulations. As an NSF Graduate Research Fellow and published author in The Journal of Physical Chemistry B, I am passionate about accelerating materials discovery with computational and data-driven approaches.",
 
   // Contact Email
   contactEmail: "nehilkieran@gmail.com",
@@ -42,6 +44,21 @@ export default {
   projects: [
     {
       id: 1,
+      title: "Dynamically interconnected microbioreactors and their applications",
+      para: "This patent describes dynamically interconnected microbioreactors and their applications. It provides a network platform with a fluidic network and multiple fluidic modules, allowing controlled transfer and self-circulation of cells and fluids. The invention addresses challenges in scaling up biological production by simulating heterogeneous environmental conditions found in large industrial bioreactors, optimizing cell lines for efficient bioproduction, and has applications in combinatorial chemical processing, synthetic biology, stem cell differentiation, and regenerative medicine.",
+      imageSrc: patentIcon,
+      url: "https://patents.google.com/patent/US20240110143A1/en",
+    },
+    {
+      id: 2, // Next available ID
+      title: "E(n) Equivariant Graph Neural Network for Learning Interactional Properties of Heterogeneous Molecular Structures",
+      para: "This article introduces an E(n) equivariant graph neural network (IEGNN) designed to predict chemical properties arising from the interaction of heterogeneous molecular structures. The IEGNN incorporates spatial features and E(n) symmetries, allowing it to efficiently learn from 3D molecular structures. Tested on three molecular datasets, it demonstrated superior performance, particularly in predicting tribological properties, outperforming previous methods. The study highlights the importance of including spatial features and molecular graph structures for accurate property prediction.",
+      imageSrc: journalIcon,
+      url: "https://pubs.acs.org/doi/10.1021/acs.jpcb.3c07304",
+    },
+ 
+    {
+      id: 3,
       title: "Petri Net Design Studio",
       para: "This is a design studio for building and simulating petri nets",
       imageSrc: 
@@ -49,7 +66,7 @@ export default {
       url: "https://github.com/kierannp/PetriNet"
     },
     {
-      id: 2,
+      id: 4,
       title: "Open-source Powder Dispenser/Hopper",
       para: "An open-source design of a powder dispenser for formulating powdery samples from multiple components",
       imageSrc: 
@@ -57,7 +74,7 @@ export default {
       url: "https://github.com/kierannp/open-powder-form"
     },
     {
-      id: 3, 
+      id: 5, 
       title: "Nietzsche's Rebirth as Zarathustra", //Project Title - Add Your Project Title Here
       para:
         "Based off of the work of Carl Jung and his analysis of Fredrich Nietzsche, I attempt to make sense of Nietzsche's regression to psychosis", // Add Your Service Type Here
@@ -66,7 +83,7 @@ export default {
       url: "https://docs.google.com/document/d/e/2PACX-1vTVDnKTHoz5322hX29S4NCm0h_yrSdAcJLDa5-1TNrvRik325IR3WbvWmC1LGnqA23Boem5ddio2ZD1/pub",
     },
     {
-      id: 4,
+      id: 6,
       title: "Manifold-Slider", //Project Title - Add Your Project Title Here
       para:
         "I trained a variational autoencoder neural network in python, then converted to tensorflow.js a python to javascript neural network converter, then built an interface and app with react.js to interact with the neural net", // Add Your Service Type Here
@@ -75,7 +92,7 @@ export default {
       url: "https://github.com/kierannp/vae-manifold-slider",
     },
     {
-      id: 5, 
+      id: 7, 
       title: "1D Fick Soltion for Solid State Diffusion python package", //Project Title - Add Your Project Title Here
       para:
         "This is a Python package that I created in my free time. I saw that there was no open source python package for performing diffusion simulations with Fick's Second law of diffusion. This package could be used to model Solid state diffusion in the specified geometries.",
@@ -84,7 +101,7 @@ export default {
       url: "https://github.com/kierannp/fick1d",
     },
     {
-      id: 6, 
+      id: 8, 
       title: "XRD Blob Identification", //Project Title - Add Your Project Title Here
       para:
         "This research project was on improving diffraction maxima identification in XRD data.", // Add Your Service Type Here
@@ -92,7 +109,7 @@ export default {
         blobImage,
       url: "https://www.dropbox.com/s/ihvajhpylheg90f/EisNehTis_TMS2022.pdf?dl=1",
     },
-  ],
+ ],
 
   // End Work Section -----------------------
 

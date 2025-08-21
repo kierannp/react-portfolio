@@ -31,40 +31,7 @@ const TimeLine = () => {
           <TimelineDot variant="outlined" color="secondary"/>
           <TimelineConnector />
         </TimelineSeparator>
-        <TimelineContent>Got Interested in Insects, Wanted to be an "Antomologist"</TimelineContent>
-      </TimelineItem>
-
-      <TimelineItem>
-        <TimelineOppositeContent>
-            <Typography color="textSecondary">6</Typography>
-        </TimelineOppositeContent>
-        <TimelineSeparator>
-          <TimelineDot variant="outlined" color="secondary"/>
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent>First Existential Crisis: The Sun's Inevitable Extinguishment</TimelineContent>
-      </TimelineItem>
-
-      <TimelineItem>
-        <TimelineOppositeContent>
-            <Typography color="textSecondary">6.5</Typography>
-        </TimelineOppositeContent>
-        <TimelineSeparator>
-          <TimelineDot variant="outlined" color="secondary"/>
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent>Diagnosed with Learning Disability: Couldn't Read</TimelineContent>
-      </TimelineItem>
-
-      <TimelineItem>
-        <TimelineOppositeContent>
-            <Typography color="textSecondary">9</Typography>
-        </TimelineOppositeContent>
-        <TimelineSeparator>
-          <TimelineDot variant="outlined" color="secondary"/>
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent>Truly Gained Ability to Read</TimelineContent>
+        <TimelineContent>Got Interested in Nature, Wanted to be an "Antomologist"</TimelineContent>
       </TimelineItem>
 
       <TimelineItem>
@@ -76,17 +43,6 @@ const TimeLine = () => {
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent>Got Interested in Homesteading, Started Building Stuff</TimelineContent>
-      </TimelineItem>
-
-      <TimelineItem>
-        <TimelineOppositeContent>
-            <Typography color="textSecondary">16</Typography>
-        </TimelineOppositeContent>
-        <TimelineSeparator>
-          <TimelineDot variant="outlined" color="secondary"/>
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent>Start of Depressive Episode</TimelineContent>
       </TimelineItem>
 
       <TimelineItem>
@@ -108,7 +64,7 @@ const TimeLine = () => {
           <TimelineDot variant="outlined" color="secondary"/>
           <TimelineConnector />
         </TimelineSeparator>
-        <TimelineContent>Started Undergrad in Material Science Engineering and Statistics at MSU</TimelineContent>
+        <TimelineContent>Started Undergrads at MSU</TimelineContent>
       </TimelineItem>
 
       <TimelineItem>
@@ -121,6 +77,7 @@ const TimeLine = () => {
         </TimelineSeparator>
         <TimelineContent>Got Interested in Machine Learning</TimelineContent>
       </TimelineItem>
+
       <TimelineItem>
         <TimelineOppositeContent>
             <Typography color="textSecondary">21</Typography>
@@ -129,8 +86,9 @@ const TimeLine = () => {
           <TimelineDot variant="outlined" color="secondary"/>
           <TimelineConnector />
         </TimelineSeparator>
-        <TimelineContent>Interned at Textron, Saw the Utility of Computer Science</TimelineContent>
+        <TimelineContent>Interned at Textron, Got Interested in Computer Science</TimelineContent>
       </TimelineItem>
+      
       <TimelineItem>
         <TimelineOppositeContent>
             <Typography color="textSecondary">22</Typography>
@@ -150,7 +108,7 @@ const TimeLine = () => {
           <TimelineDot variant="outlined" color="secondary"/>
           <TimelineConnector />
         </TimelineSeparator>
-        <TimelineContent>Finished Undergrad at MSU, Honors in Both Degrees with 3.8/4.0 GPA</TimelineContent>
+        <TimelineContent>Finished Undergrad at MSU, Honors Degrees in Statistics and Material Science Engineering with 3.8/4.0 GPA</TimelineContent>
       </TimelineItem>
 
       <TimelineItem>
@@ -171,6 +129,26 @@ const TimeLine = () => {
           <TimelineDot variant="outlined" color="secondary"/>
         </TimelineSeparator>
         <TimelineContent>Won the NSF Graduate Research Fellowship</TimelineContent>
+      </TimelineItem>
+
+      <TimelineItem>
+        <TimelineOppositeContent>
+            <Typography color="textSecondary">24</Typography>
+        </TimelineOppositeContent>
+        <TimelineSeparator>
+          <TimelineDot variant="outlined" color="secondary"/>
+        </TimelineSeparator>
+        <TimelineContent>Published First Paper on Exploiting Euclidean Symmetry in Graph Neural Networks</TimelineContent>
+      </TimelineItem>
+
+      <TimelineItem>
+        <TimelineOppositeContent>
+            <Typography color="textSecondary">26</Typography>
+        </TimelineOppositeContent>
+        <TimelineSeparator>
+          <TimelineDot variant="outlined" color="secondary"/>
+        </TimelineSeparator>
+        <TimelineContent>Got Married</TimelineContent>
       </TimelineItem>
 
     </Timeline>

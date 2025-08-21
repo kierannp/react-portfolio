@@ -15,13 +15,14 @@ const Footer = () => {
             {data.contactEmail}
           </a>
           <div className="social-icons">
-            {data.social.map(socialLink => (
+            {data.social.map((socialLink, index) => (
               <a
+                key={index} // Use a unique identifier here if available
                 href={socialLink.url}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src={socialLink.img} alt="icons"></img>
+                <img src={socialLink.img} alt="icons" />
               </a>
             ))}
           </div>

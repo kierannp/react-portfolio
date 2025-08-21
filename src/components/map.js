@@ -39,11 +39,9 @@ const mapData = [
 ];
 
 
-  
 const MapComponent = compose(
   withProps({
-    googleMapURL:
-    "https://maps.googleapis.com/maps/api/js?key=AIzaSyCWV2xmG6s-oCD1emPq31DXgBFxgbjMT98&libraries=geometry,drawing,places",
+    googleMapURL: `https://maps.googleapis.com/maps/api/js?key=${process.env.GATSBY_GOOGLE_MAPS_API_KEY}&libraries=geometry,drawing,places`,
     loadingElement: <div id="loadingElement" style={{ height: `100%`}} />,
     containerElement: <div id="containerElement" style={{ height: `500px`, width: `100%`}} />,
     mapElement: <div id="mapElement" style={{ height: `100%`, width: `80%`, margin:`auto`}} />,
@@ -51,7 +49,10 @@ const MapComponent = compose(
   }),
   withScriptjs,
   withGoogleMap
+  
   )(props => {
+    
+
     return(
       <GoogleMap defaultZoom={2} defaultCenter={{ lat: 10, lng: 0 }}>
         {props.markers.map(marker => (

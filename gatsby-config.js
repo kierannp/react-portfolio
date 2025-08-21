@@ -1,8 +1,13 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
+  
   siteMetadata: {
     title: ``,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `Kieran Nehil`,
+    author: `Kieran Nehil-Puleo`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -24,7 +29,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `./public/favicon-32x32.png`, // This path is relative to the root of the site.
+	icon: `${__dirname}/src/images/cfa18c749773c0e01b3aae98f82f1f07.png`
       },
     },
     `gatsby-plugin-sass`,
