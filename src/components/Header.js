@@ -43,7 +43,7 @@ const Header = () => {
               href={`mailto:${data.contactEmail}`}
               className="primary-btn"
             >
-              CONNECT WITH ME
+              SEND ME AN EMAIL
             </a>
           </Fade>
         </div>
