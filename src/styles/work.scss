@@ -3,7 +3,7 @@
   margin-top: 10vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   h1 {
     font-size: 3rem;
     line-height: 20px;
@@ -23,5 +23,11 @@
     @include media(">=tablet", "<desktop") {
       grid-template-columns: 1fr 1fr;
     }
+  }
+  .divider {
+    width: 80%;
+    margin: 4rem 0;
+    border: 0;
+    border-top: 1px solid #000;
   }
 }

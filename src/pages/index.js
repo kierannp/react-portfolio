@@ -16,16 +16,22 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Kieran Nehil-Puleo" />
     <Header></Header>
+    <hr className="divider" />
     <About></About>
+    <hr className="divider" />
     <Work></Work>
+    <hr className="divider" />
+    <Skills></Skills>
+    <hr className="divider" />
     <TimeLine></TimeLine>
+    <hr className="divider" />
     <div className='map-wrapper'>
       <Fade bottom cascade>
-        <h1>Adventures</h1>
+        <h1 className="adventures-title">Adventures</h1>
       </Fade>
     </div>
     <Map></Map>
-    <Skills></Skills>
+    <hr className="divider" />
     <Promotion></Promotion>
     <Footer></Footer>
   </Layout>

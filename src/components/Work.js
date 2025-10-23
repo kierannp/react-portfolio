@@ -31,7 +31,9 @@ const Work = () => {
               ))}
             </Fade>
           </div>
-
+        </div>
+        <hr className="divider" />
+        <div className="work-wrapper">
           <Fade bottom>
             <h1 className="other-projects-title">Other Projects</h1>
           </Fade>
