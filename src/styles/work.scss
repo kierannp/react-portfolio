@@ -8,11 +8,12 @@
     font-size: 3rem;
     line-height: 20px;
   }
-  .grid {
+  .work-list {
     display: grid;
-    margin-top: 20px;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
+    grid-gap: 20px;
+    margin-top: 20px;
+    justify-items: center;
     @include media(">=phone", "<lgphone") {
       grid-template-columns: 1fr;
     }

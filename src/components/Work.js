@@ -13,7 +13,7 @@ const Work = () => {
             <h1>Projects</h1>
           </Fade>
 
-          <div className="grid">
+          <div className="work-list">
             <Fade bottom cascade>
               {data.projects.map(project => (
                 <Card
@@ -22,6 +22,8 @@ const Work = () => {
                   paragraph={project.para}
                   img={project.imageSrc}
                   projectLink={project.url}
+                  date={project.date}
+                  tags={project.tags}
                 ></Card>
               ))}
             </Fade>

@@ -14,10 +14,10 @@ import Fade from "react-reveal/Fade"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Kieran Nehil" />
+    <SEO title="Kieran Nehil-Puleo" />
     <Header></Header>
-    <Work></Work>
     <About></About>
+    <Work></Work>
     <TimeLine></TimeLine>
     <div className='map-wrapper'>
       <Fade bottom cascade>

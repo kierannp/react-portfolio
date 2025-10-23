@@ -8,9 +8,14 @@ import TimelineContent from '@material-ui/lab/TimelineContent';
 import TimelineDot from '@material-ui/lab/TimelineDot';
 import TimelineOppositeContent from '@material-ui/lab/TimelineOppositeContent';
 import Typography from '@material-ui/core/Typography';
+import Fade from "react-reveal/Fade"
 
 const TimeLine = () => {
   return (
+    <div className="section" id="timeline" style={{ padding: '20px' }}>">
+    <Fade bottom >
+      <h1 style={{ marginBottom: "20px", textAlign: 'center', marginTop: '20px', fontSize:'3rem' }}>Timeline</h1>
+    </Fade>
     <Timeline align="alternate">
       <TimelineItem>
         <TimelineOppositeContent>
@@ -152,6 +157,7 @@ const TimeLine = () => {
       </TimelineItem>
 
     </Timeline>
+    </div>
   );
 }
 

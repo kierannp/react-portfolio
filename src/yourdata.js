@@ -45,16 +45,20 @@ export default {
     {
       id: 1,
       title: "Dynamically interconnected microbioreactors and their applications",
-      para: "This patent describes dynamically interconnected microbioreactors and their applications. It provides a network platform with a fluidic network and multiple fluidic modules, allowing controlled transfer and self-circulation of cells and fluids. The invention addresses challenges in scaling up biological production by simulating heterogeneous environmental conditions found in large industrial bioreactors, optimizing cell lines for efficient bioproduction, and has applications in combinatorial chemical processing, synthetic biology, stem cell differentiation, and regenerative medicine.",
+      para: "This patent describes dynamically interconnected microbioreactors and their applications. The invention addresses challenges in scaling up biological production by simulating heterogeneous environmental conditions found in large industrial bioreactors, optimizing cell lines for efficient bioproduction.",
       imageSrc: patentIcon,
       url: "https://patents.google.com/patent/US20240110143A1/en",
+      date: "2024-04-11",
+      tags: ["Patent", "Interconnection networks", "Microfluidics"],
     },
     {
-      id: 2, // Next available ID
+      id: 2, 
       title: "E(n) Equivariant Graph Neural Network for Learning Interactional Properties of Heterogeneous Molecular Structures",
-      para: "This article introduces an E(n) equivariant graph neural network (IEGNN) designed to predict chemical properties arising from the interaction of heterogeneous molecular structures. The IEGNN incorporates spatial features and E(n) symmetries, allowing it to efficiently learn from 3D molecular structures. Tested on three molecular datasets, it demonstrated superior performance, particularly in predicting tribological properties, outperforming previous methods. The study highlights the importance of including spatial features and molecular graph structures for accurate property prediction.",
+      para: "This article introduces an E(n) equivariant graph neural network (IEGNN) designed to predict chemical properties arising from the interaction of heterogeneous molecular structures. The IEGNN incorporates spatial features and E(n) symmetries, allowing it to efficiently learn from 3D molecular structures.",
       imageSrc: journalIcon,
       url: "https://pubs.acs.org/doi/10.1021/acs.jpcb.3c07304",
+      date: "2023-12-13",
+      tags: ["Publication","Equivariant Graph Neural Networks", "Molecular Dynamics"],
     },
  
     {
@@ -63,15 +67,30 @@ export default {
       para: "This is a design studio for building and simulating petri nets",
       imageSrc: 
         petriGif,
-      url: "https://github.com/kierannp/PetriNet"
+      url: "https://github.com/kierannp/PetriNet",
+      date: "2022-05-20",
+      tags: ["Petri Nets", "Design Studio", "Simulation"],
     },
     {
       id: 4,
-      title: "Open-source Powder Dispenser/Hopper",
-      para: "An open-source design of a powder dispenser for formulating powdery samples from multiple components",
+      title: "Open-source Powder Dispenser",
+      para: "An open-source design of a powder dispenser for formulating powdery samples from multiple components, such as alloys, deep eutectics, etc. This project aims to provide a low-cost, open-source solution for researchers and hobbyists to create formulations of powders with precise control over the composition and mass.",
       imageSrc: 
         powderImage,
-      url: "https://github.com/kierannp/open-powder-form"
+      url: "https://github.com/kierannp/open-powder-form",
+      date: "2021-11-15",
+      tags: ["Autonomous Experimentation", "Hardware", "3D Printing"],
+    },
+      {
+      id: 8, 
+      title: "Robust areal diffraction peak detection based on Shannon entropy", //Project Title - Add Your Project Title Here
+      para:
+        "This research project was on improving diffraction maxima identification in XRD data.", // Add Your Service Type Here
+      imageSrc:
+        blobImage,
+      url: "https://www.dropbox.com/s/ihvajhpylheg90f/EisNehTis_TMS2022.pdf?dl=1",
+      date: "2022-03-02",
+      tags: ["Oral Presentation", "XRD", "Computer Vision"],
     },
     {
       id: 5, 
@@ -81,6 +100,8 @@ export default {
       imageSrc:
         nietzscheIcon,
       url: "https://docs.google.com/document/d/e/2PACX-1vTVDnKTHoz5322hX29S4NCm0h_yrSdAcJLDa5-1TNrvRik325IR3WbvWmC1LGnqA23Boem5ddio2ZD1/pub",
+      date: "2020-08-01",
+      tags: ["Philosophy", "Psychology", "Nietzsche"],
     },
     {
       id: 6,
@@ -90,24 +111,19 @@ export default {
       imageSrc:
         manifold,
       url: "https://github.com/kierannp/vae-manifold-slider",
+      date: "2020-03-10",
+      tags: ["VAE", "React.js", "Tensorflow.js"],
     },
     {
       id: 7, 
       title: "1D Fick Soltion for Solid State Diffusion python package", //Project Title - Add Your Project Title Here
       para:
-        "This is a Python package that I created in my free time. I saw that there was no open source python package for performing diffusion simulations with Fick's Second law of diffusion. This package could be used to model Solid state diffusion in the specified geometries.",
+        "This is a Python package that I created in my free time during COVID. I saw that there was no open source python package for performing diffusion simulations with Fick's Second law of diffusion. This package could be used to model Solid state diffusion in the specified geometries.",
       imageSrc:
         thinImage,
       url: "https://github.com/kierannp/fick1d",
-    },
-    {
-      id: 8, 
-      title: "XRD Blob Identification", //Project Title - Add Your Project Title Here
-      para:
-        "This research project was on improving diffraction maxima identification in XRD data.", // Add Your Service Type Here
-      imageSrc:
-        blobImage,
-      url: "https://www.dropbox.com/s/ihvajhpylheg90f/EisNehTis_TMS2022.pdf?dl=1",
+      date: "2019-12-25",
+      tags: ["Diffusion", "Material Science"],
     },
  ],
 
@@ -115,7 +131,7 @@ export default {
 
   // About Secton --------------
   aboutParaOne:
-    "I am a third year PhD student at Vanderbilt University in Interdiscipinary Material Science, a multidisciplinary domain focused on material science; for me, roughly a culmination of computer science and physical materials",
+    "I am a PhD candidate at Vanderbilt University in Interdiscipinary Material Science, a multidisciplinary domain focused on material science; for me, roughly a culmination of computer science and physical materials",
   aboutParaTwo:
     "I am a person who enjoys setting and working toward goals that challenge me grow.",
   aboutParaThree:
