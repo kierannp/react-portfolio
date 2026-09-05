@@ -1,11 +1,8 @@
 // Skills Icons
-import reactIcon from "./images/react.svg"
 import jsIcon from "./images/javascript.svg"
 import portfolioImage from "./images/portrait.jpg"
 import pythonIcon from "./images/python-5.svg"
 import cppIcon from "./images/c-logo-icon-28389.png"
-// import tfIcon from "./images/tensorflow_logo.png"
-import rIcon from "./images/Rlogo.svg"
 // Social Icon
 import githubIcon from "./images/github.svg"
 import linkedinIcon from "./images/linkedin.svg"
@@ -14,26 +11,30 @@ import arwinLogo from "./images/cfa18c749773c0e01b3aae98f82f1f07.png"
 import manifold from "./images/manifold.gif"
 import blobImage from "./images/image.png"
 import thinImage from "./images/thin_film.gif"
-import nietzscheIcon from "./images/Nietzsche.jpeg"
 import petriGif from "./images/PetriNet.gif"
 import powderImage from "./images/powder_bird.png"
 import patentIcon from "./images/patent.svg"
 import journalIcon from "./images/iegnn.svg"
+import grouperImage from "./images/grouper.png"
 
 export default {
 
   //   Header Details ---------------------
   name: "Kieran",
   headerTagline: [
-    "ML and simulations",
-    "to design materials",
+    "Engineer, researcher,",
+    "lifelong learner",
   ],
   //   Header Paragraph
   headerParagraph:
-    "I am an NSF Graduate Research Fellow and Ph.D. candidate in Interdisciplinary Materials Science at Vanderbilt University. My research focuses on developing methods for the autonomous design of polymers and solvents, emphasizing physics-based, graph-theoretic, and algebraic approaches.",
+    "I currently work as an ML + Quant Researcher at a hedge fund startup, applying machine learning to financial markets. I hold a Ph.D. from Vanderbilt University, where as an NSF Graduate Research Fellow I developed physics-based, graph-theoretic, and algebraic methods for the autonomous design of polymers and solvents.",
 
   // Contact Email
   contactEmail: "nehilkieran@gmail.com",
+
+  // CV / Resume (served from /static)
+  resumeLink: "/Kieran-Nehil-Puleo-Resume.pdf",
+  cvLink: "/Kieran-Nehil-Puleo-CV.pdf",
 
   // End Header Details -----------------------
   
@@ -41,6 +42,20 @@ export default {
   navLogo: arwinLogo,
   // Work Section ------------------------
   flagshipProjects: [
+    {
+      id: 5,
+      title: "Grouper: Symmetry-Aware Functional-Group Graph Representations for Generative Exploration of Chemical Space",
+      problem: "Chemical space is astronomically large, and enumerating candidate molecules atom-by-atom wastes most of the effort on duplicates — structures that are symmetry-equivalent to ones already generated. That redundancy makes exhaustive, verifiable design of new molecules computationally intractable.",
+      solution: "Built Grouper, a symmetry-aware hierarchical representation that describes molecules as graphs of functional groups and collapses symmetry-equivalent configurations. Paired with combinatorial and algebraic methods (including Pólya enumeration theory) and scalable parallel code, it generates and analyzes chemical spaces end-to-end while staying interoperable with simulation formats and data-driven models.",
+      impact: "Cut isomorphism checks by nearly 99% versus naive enumeration near the exhaustive limit, making previously untenable strategies such as exhaustive design tractable and verifiable. Demonstrated on solubility optimization and polymer functionalization, and published as first author in npj Computational Materials.",
+      imageSrc: grouperImage,
+      links: [
+        { label: "Publication", url: "https://www.nature.com/articles/s41524-026-02263-y" },
+        { label: "Code", url: "https://github.com/mosdef-hub/Grouper" }
+      ],
+      date: "2026-08-27",
+      tags: ["Publication", "Graph Theory", "Group Theory", "Generative Molecular Design"],
+    },
     {
       id: 2,
       title: "E(n) Equivariant Graph Neural Network for Learning Interactional Properties of Heterogeneous Molecular Structures",
@@ -67,21 +82,17 @@ export default {
       date: "2024-04-11",
       tags: ["Patent", "Interconnection networks", "Microfluidics"],
     },
+  ],
+  otherProjects: [
     {
       id: 4,
       title: "Open-source Powder Dispenser",
-      problem: "Formulating precise mixtures of powders (like alloys or deep eutectics) requires expensive, specialized equipment, which can be a barrier for researchers and hobbyists.",
-      solution: "Designed and built a low-cost, open-source powder dispenser using 3D printing and readily available components. The design allows for precise control over the composition and mass of powder formulations.",
-      impact: "This project provides an accessible tool for materials science research and development, enabling more people to experiment with creating new materials. The open-source design allows for community contributions and modifications.",
+      para: "A low-cost, open-source powder dispenser built with 3D printing and off-the-shelf components, giving precise control over the composition and mass of multi-component powder formulations.",
       imageSrc: powderImage,
-      links: [
-        { label: "Code", url: "https://github.com/kierannp/open-powder-form" }
-      ],
+      url: "https://github.com/kierannp/open-powder-form",
       date: "2021-11-15",
       tags: ["Autonomous Experimentation", "Hardware", "3D Printing"],
     },
-  ],
-  otherProjects: [
     {
       id: 3,
       title: "Petri Net Design Studio",
@@ -101,15 +112,6 @@ export default {
       tags: ["Oral Presentation", "XRD", "Computer Vision"],
     },
     {
-      id: 5,
-      title: "Nietzsche's Rebirth as Zarathustra",
-      para: "Based off of the work of Carl Jung and his analysis of Fredrich Nietzsche, I attempt to make sense of Nietzsche's regression to psychosis",
-      imageSrc: nietzscheIcon,
-      url: "https://docs.google.com/document/d/e/2PACX-1vTVDnKTHoz5322hX29S4NCm0h_yrSdAcJLDa5-1TNrvRik325IR3WbvWmC1LGnqA23Boem5ddio2ZD1/pub",
-      date: "2020-08-01",
-      tags: ["Philosophy", "Psychology", "Nietzsche"],
-    },
-    {
       id: 6,
       title: "Manifold-Slider",
       para: "I trained a variational autoencoder neural network in python, then converted to tensorflow.js a python to javascript neural network converter, then built an interface and app with react.js to interact with the neural net",
@@ -120,7 +122,7 @@ export default {
     },
     {
       id: 7,
-      title: "1D Fick Soltion for Solid State Diffusion python package",
+      title: "1D Fick Solution for Solid State Diffusion Python package",
       para: "This is a Python package that I created in my free time during COVID. I saw that there was no open source python package for performing diffusion simulations with Fick's Second law of diffusion. This package could be used to model Solid state diffusion in the specified geometries.",
       imageSrc: thinImage,
       url: "https://github.com/kierannp/fick1d",
@@ -133,11 +135,11 @@ export default {
 
   // About Secton --------------
   aboutParaOne:
-    "I am a PhD candidate at Vanderbilt University in Interdiscipinary Material Science, a multidisciplinary domain focused on material science; for me, roughly a culmination of computer science and physical materials",
+    "I am an ML + Quant Researcher at a hedge fund startup, where I apply machine learning to financial markets and engineer the software around it. I earned my PhD at Vanderbilt University in Interdisciplinary Materials Science, a multidisciplinary domain that, for me, was roughly a culmination of computer science and physical materials.",
   aboutParaTwo:
-    "I am a person who enjoys setting and working toward goals that challenge me grow.",
+    "I value truth, hard work, and passion, and I'm motivated by making a change in the world — I became an engineer because I wanted to manifest my ideas. Outside of work, my main pursuit is jiu jitsu, where I'm a three-stripe blue belt, and I've previously competed in wrestling and Olympic weightlifting. I'm currently based in Nashville, TN.",
   aboutParaThree:
-    "I got Undergraduate degrees in Material Science Engineering and Statistics, and minors in Computational Modeling and Computer Science. I like integrating cross-disciplinary skills to make cool stuff.",
+    "I hold undergraduate degrees in Materials Science Engineering and Statistics, with minors in Computational Modeling and Computer Science. I love integrating cross-disciplinary skills to build things that matter.",
   aboutImage:
     portfolioImage,
 
@@ -152,30 +154,23 @@ export default {
       id: 1,
       img: pythonIcon,
       para:
-        "This is my primary programming language. I use this to build machine learning models, scripts and packages for molecular simulations, and much more.",
+        "My primary language, with countless projects behind it. I build machine learning models in PyTorch, research and production code, and scientific packages for molecular simulation. I also work extensively with Claude to accelerate research and engineering.",
     },
     {
       id: 2,
       img: cppIcon,
       para:
-        "This is my go to language for performance and hardware.",
+        "My go-to for performance and hardware. I've shipped several serious projects in C++, from high-performance computing to low-level systems work.",
     },
     {
       id: 3,
       img: jsIcon,
       para:
-        "This is my language for anything I want people that are non-programmers to use, such as this website.",
+        "Some work here, mostly for things I want non-programmers to use — like this website.",
     },
   ],
 
   // End Skills Section --------------------------
-
-  //   Promotion Section --------------------------
-
-  promotionHeading: "Appreciation",
-  promotionPara:
-    "Thanks for visiting my portfolio!",
-  // End Promotion Section -----------------
 
   //   Contact Section --------------
 
