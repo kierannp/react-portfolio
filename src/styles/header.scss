@@ -44,6 +44,12 @@
       }
     }
   }
+  .header-btns {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
   p {
     width: 50%;
     text-align: center;

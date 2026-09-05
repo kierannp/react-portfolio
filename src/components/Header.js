@@ -39,12 +39,22 @@ const Header = () => {
             <p>{data.headerParagraph}</p>
           </Fade>
           <Fade bottom>
-            <a
-              href={`mailto:${data.contactEmail}`}
-              className="primary-btn"
-            >
-              SEND ME AN EMAIL
-            </a>
+            <div className="header-btns">
+              <a
+                href={`mailto:${data.contactEmail}`}
+                className="primary-btn"
+              >
+                SEND ME AN EMAIL
+              </a>
+              <a
+                href={data.cvLink}
+                className="primary-btn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                CV
+              </a>
+            </div>
           </Fade>
         </div>
       </div>

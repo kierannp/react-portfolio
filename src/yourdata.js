@@ -3,6 +3,9 @@ import jsIcon from "./images/javascript.svg"
 import portfolioImage from "./images/portrait.jpg"
 import pythonIcon from "./images/python-5.svg"
 import cppIcon from "./images/c-logo-icon-28389.png"
+import torchIcon from "./images/pytorch.svg"
+import hpcIcon from "./images/hpc.svg"
+import statsIcon from "./images/statistics.svg"
 // Social Icon
 import githubIcon from "./images/github.svg"
 import linkedinIcon from "./images/linkedin.svg"
@@ -33,7 +36,6 @@ export default {
   contactEmail: "nehilkieran@gmail.com",
 
   // CV / Resume (served from /static)
-  resumeLink: "/Kieran-Nehil-Puleo-Resume.pdf",
   cvLink: "/Kieran-Nehil-Puleo-CV.pdf",
 
   // End Header Details -----------------------
@@ -164,6 +166,24 @@ export default {
     },
     {
       id: 3,
+      img: torchIcon,
+      para:
+        "PyTorch is where I build. I've trained equivariant graph neural networks, variational autoencoders, and sequence models — writing custom layers, losses, and training loops rather than reaching for off-the-shelf architectures.",
+    },
+    {
+      id: 4,
+      img: statsIcon,
+      para:
+        "I hold an honors degree in Statistics and use it daily — time-series analysis, Bayesian and frequentist inference, experiment design, and the discipline of separating a real signal from an overfit one.",
+    },
+    {
+      id: 5,
+      img: hpcIcon,
+      para:
+        "High-performance computing: parallel and distributed code on GPU clusters and SLURM schedulers, profiling and optimizing hot paths, and running large simulation and training campaigns at scale.",
+    },
+    {
+      id: 6,
       img: jsIcon,
       para:
         "Some work here, mostly for things I want non-programmers to use — like this website.",

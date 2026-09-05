@@ -6,15 +6,13 @@ import Header from "../components/Header"
 import Work from "../components/Work"
 import About from "../components/about"
 import Skills from "../components/skills"
-import Promotion from "../components/Promotion"
 import Footer from "../components/Footer"
-import TimeLine from "../components/timeline"
 import Map from "../components/map"
 import Fade from "react-reveal/Fade"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Kieran Nehil-Puleo" />
+    <SEO title="ML + Quant Researcher" />
     <Header></Header>
     <hr className="divider" />
     <About></About>
@@ -23,16 +21,13 @@ const IndexPage = () => (
     <hr className="divider" />
     <Skills></Skills>
     <hr className="divider" />
-    <TimeLine></TimeLine>
-    <hr className="divider" />
-    <div className='map-wrapper'>
+    <div className='map-wrapper' id="adventures">
       <Fade bottom cascade>
         <h1 className="adventures-title">Adventures</h1>
       </Fade>
     </div>
     <Map></Map>
     <hr className="divider" />
-    <Promotion></Promotion>
     <Footer></Footer>
   </Layout>
 )

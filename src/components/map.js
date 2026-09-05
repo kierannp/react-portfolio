@@ -35,7 +35,11 @@ const mapData = [
    {lat: 31.2304, lng: 121.4737}, // shanghai:       
    {lat: 49.9929, lng: 8.2473}, // frankfurt:
     {lat: 51.5074, lng: -0.1278}, // london:
-    {lat: 55.9533, lng: 3.1883}, // edinburgh:
+    {lat: 55.9533, lng: -3.1883}, // edinburgh:
+    {lat: 45.4642, lng: 9.1900}, // milan, italy:
+    {lat: 38.6270, lng: -90.1994}, // st louis, missouri:
+    {lat: 33.7490, lng: -84.3880}, // atlanta, georgia:
+    {lat: 42.3601, lng: -71.0589}, // boston, massachusetts:
 ];
 
 
