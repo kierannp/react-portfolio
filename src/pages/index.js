@@ -25,6 +25,10 @@ const IndexPage = () => (
       <Fade bottom cascade>
         <h1 className="adventures-title">Adventures</h1>
       </Fade>
+      <p className="adventures-intro">
+        Thirty-three places across four continents &mdash; hover a filled pin to
+        see photos.
+      </p>
     </div>
     <Map></Map>
     <hr className="divider" />

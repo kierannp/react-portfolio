@@ -17,6 +17,11 @@ import thinImage from "./images/thin_film.gif"
 import petriGif from "./images/PetriNet.gif"
 import powderImage from "./images/powder_bird.png"
 import patentIcon from "./images/patent.svg"
+import venueJournalIcon from "./images/venue-journal.svg"
+import venuePatentIcon from "./images/venue-patent.svg"
+import venueNpjCompumats from "./images/venue-npj-compumats.svg"
+import venueNatComputSci from "./images/venue-nat-comput-sci.svg"
+import mutexaImage from "./images/mutexagpt.png"
 import journalIcon from "./images/iegnn.svg"
 import grouperImage from "./images/grouper.png"
 
@@ -29,8 +34,11 @@ export default {
     "lifelong learner",
   ],
   //   Header Paragraph
-  headerParagraph:
-    "I currently work as an ML + Quant Researcher at a hedge fund startup, applying machine learning to financial markets. I hold a Ph.D. from Vanderbilt University, where as an NSF Graduate Research Fellow I developed physics-based, graph-theoretic, and algebraic methods for the autonomous design of polymers and solvents.",
+  // Rendered one entry per line in the hero.
+  headerParagraph: [
+    "ML + Quant Researcher applying machine learning to financial markets.",
+    "Ph.D. from Vanderbilt, NSF Graduate Research Fellow.",
+  ],
 
   // Contact Email
   contactEmail: "nehilkieran@gmail.com",
@@ -45,44 +53,73 @@ export default {
   // Work Section ------------------------
   flagshipProjects: [
     {
+      id: 9,
+      title: "MutexaGPT: an intuition-to-design translator for physics-based enzyme engineering",
+      shortTitle: "MutexaGPT",
+      summary:
+        "A multi-agent LLM platform that turns plain-English engineering intuition into physics-based simulations and concrete enzyme variant designs.",
+      problem: "Physical intuition about how an enzyme's structure and dynamics shape its function has guided successful protein engineering, but there was no systematic way to translate those qualitative, abstract ideas into quantitative, actionable design principles.",
+      solution: "Co-developed MutexaGPT, an open-access multi-agent large language model platform. Through a web interface it takes plain-English, intuition-driven requests, uses LLM agents to elicit the missing information, constructs physics-based models, configures and runs high-throughput molecular modeling workflows, and converts the results into actionable design proposals such as smart mutation libraries.",
+      impact: "Demonstrated on two protein engineering tasks \u2014 enlarging a binding cavity and improving cold adaptation \u2014 and published in Nature Computational Science.",
+      imageSrc: mutexaImage,
+      venue: { logo: venueNatComputSci, name: "Nature Computational Science", logoHeight: 46 },
+      links: [
+        { label: "Publication", url: "https://www.nature.com/articles/s43588-026-01049-y" }
+      ],
+      date: "2026-09-10",
+      tags: ["LLM Agents", "Protein Engineering", "Molecular Simulation"],
+    },
+    {
       id: 5,
       title: "Grouper: Symmetry-Aware Functional-Group Graph Representations for Generative Exploration of Chemical Space",
+      shortTitle: "Grouper",
+      summary:
+        "A symmetry-aware graph representation that skips duplicate structures, making exhaustive design of new molecules computationally feasible.",
       problem: "Chemical space is astronomically large, and enumerating candidate molecules atom-by-atom wastes most of the effort on duplicates — structures that are symmetry-equivalent to ones already generated. That redundancy makes exhaustive, verifiable design of new molecules computationally intractable.",
       solution: "Built Grouper, a symmetry-aware hierarchical representation that describes molecules as graphs of functional groups and collapses symmetry-equivalent configurations. Paired with combinatorial and algebraic methods (including Pólya enumeration theory) and scalable parallel code, it generates and analyzes chemical spaces end-to-end while staying interoperable with simulation formats and data-driven models.",
       impact: "Cut isomorphism checks by nearly 99% versus naive enumeration near the exhaustive limit, making previously untenable strategies such as exhaustive design tractable and verifiable. Demonstrated on solubility optimization and polymer functionalization, and published as first author in npj Computational Materials.",
       imageSrc: grouperImage,
+      venue: { logo: venueNpjCompumats, name: "npj Computational Materials", logoHeight: 28 },
       links: [
         { label: "Publication", url: "https://www.nature.com/articles/s41524-026-02263-y" },
         { label: "Code", url: "https://github.com/mosdef-hub/Grouper" }
       ],
       date: "2026-08-27",
-      tags: ["Publication", "Graph Theory", "Group Theory", "Generative Molecular Design"],
+      tags: ["Graph Theory", "Group Theory", "Generative Molecular Design"],
     },
     {
       id: 2,
       title: "E(n) Equivariant Graph Neural Network for Learning Interactional Properties of Heterogeneous Molecular Structures",
+      shortTitle: "Equivariant GNN for Molecular Mixtures",
+      summary:
+        "A graph neural network that respects the symmetries of 3D space to efficiently predict properties of mixed molecular systems.",
       problem: "Predicting chemical properties from 3D molecular structures is computationally expensive. Existing models often don't respect the symmetries of the physical world, leading to inefficiencies.",
       solution: "Developed an E(n) equivariant graph neural network (IEGNN) that incorporates spatial features and respects physical symmetries (E(n) equivariance), allowing for more efficient and accurate learning from 3D molecular data.",
       impact: "The IEGNN provides a more efficient way to predict chemical properties, which can accelerate the discovery of new materials and molecules. This work was published in the Journal of Physical Chemistry B.",
       imageSrc: journalIcon,
+      venue: { icon: venueJournalIcon, name: "The Journal of Physical Chemistry B" },
       links: [
         { label: "Publication", url: "https://pubs.acs.org/doi/10.1021/acs.jpcb.3c07304" }
       ],
       date: "2023-12-13",
-      tags: ["Publication", "Equivariant Graph Neural Networks", "Molecular Dynamics"],
+      tags: ["Equivariant Graph Neural Networks", "Molecular Dynamics"],
     },
     {
       id: 1,
       title: "Dynamically interconnected microbioreactors and their applications",
+      shortTitle: "Interconnected Microbioreactors",
+      summary:
+        "A system of interconnected microbioreactors that recreates the uneven conditions of industrial bioreactors in the lab, so cell lines can be optimized before scaling up.",
       problem: "Scaling up biological production from the lab to industrial scale is challenging because environmental conditions in large bioreactors are not uniform. This makes it difficult to optimize cell lines for efficient bioproduction.",
       solution: "Invented a system of dynamically interconnected microbioreactors that can simulate the heterogeneous conditions of large-scale industrial bioreactors. This allows for more realistic and effective optimization of cell lines.",
       impact: "This invention, now a patent, provides a new tool for bioprocess development, potentially leading to more efficient and scalable production of biofuels, pharmaceuticals, and other bio-based products.",
       imageSrc: patentIcon,
+      venue: { icon: venuePatentIcon, name: "US Patent US20240110143A1" },
       links: [
         { label: "Patent", url: "https://patents.google.com/patent/US20240110143A1/en" }
       ],
       date: "2024-04-11",
-      tags: ["Patent", "Interconnection networks", "Microfluidics"],
+      tags: ["Interconnection networks", "Microfluidics"],
     },
   ],
   otherProjects: [

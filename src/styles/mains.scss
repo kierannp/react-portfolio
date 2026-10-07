@@ -2,6 +2,14 @@
 @import "./include-media.scss";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap");
 
+// Shared design tokens
+$accent: #000;
+$accent-dark: #333;
+$border-soft: #e3e5e8;
+$text-muted: #44474d;
+$radius-card: 12px;
+$radius-btn: 8px;
+
 // Atoms
 @import "./card.scss";
 @import "./flagship-card.scss";
@@ -12,13 +20,23 @@
 @import "./work.scss";
 @import "./about.scss";
 @import "./skills.scss";
-@import "./promotion.scss";
 @import "./footer.scss";
 @import "./map.scss";
 @import "./divider.scss";
 
 * {
   font-family: "Montserrat";
+}
+
+// One global heading line-height. Section stylesheets previously set a fixed
+// `line-height: 20px` against rem-sized headings, so 48-64px type was laid out
+// in a 20px line box and consecutive lines overlapped.
+h1,
+h2,
+h3,
+h4,
+h5 {
+  line-height: 1.2;
 }
 
 body {
@@ -43,16 +61,35 @@ body {
   justify-content: center;
 }
 
-.primary-btn {
+.primary-btn,
+.secondary-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   margin: 10px;
-  padding: 10px;
-  background-color: black;
-  color: white;
-  border: 0px;
-  transition: all 0.2s ease-in-out;
+  padding: 12px 26px;
+  border-radius: $radius-btn;
+  border: 1px solid transparent;
+  font-size: 15px;
+  font-weight: 600;
   text-decoration: none;
   cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.primary-btn {
+  background-color: $accent;
+  color: white;
   &:hover {
-    transform: scale(1.1);
+    background-color: $accent-dark;
+  }
+}
+
+.secondary-btn {
+  background-color: transparent;
+  color: black;
+  border-color: #c9ccd1;
+  &:hover {
+    border-color: black;
   }
 }

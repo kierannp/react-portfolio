@@ -29,14 +29,17 @@ const Header = () => {
                 {" "}
                 {data.headerTagline[1]}
               </h1>
-              <h1>
-                {" "}
-                {data.headerTagline[2]}
-              </h1>
             </div>
           </Fade>
           <Fade bottom>
-            <p>{data.headerParagraph}</p>
+            <p>
+              {data.headerParagraph.map((line, i) => (
+                <React.Fragment key={line}>
+                  {i > 0 && <br />}
+                  {line}
+                </React.Fragment>
+              ))}
+            </p>
           </Fade>
           <Fade bottom>
             <div className="header-btns">
@@ -44,15 +47,15 @@ const Header = () => {
                 href={`mailto:${data.contactEmail}`}
                 className="primary-btn"
               >
-                SEND ME AN EMAIL
+                Send me an email
               </a>
               <a
                 href={data.cvLink}
-                className="primary-btn"
+                className="secondary-btn"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                CV
+                Download CV
               </a>
             </div>
           </Fade>

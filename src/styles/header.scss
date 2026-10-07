@@ -14,30 +14,32 @@
   }
 
   h2 {
-    font-size: 1rem;
+    font-size: 1.75rem;
+    font-weight: 700;
     text-align: center;
+    margin: 0.75rem 0 1.25rem;
     @include media(">=phone", "<lgphone") {
-      font-size: 14px;
+      font-size: 1.1rem;
     }
     @include media(">=lgphone", "<tablet") {
-      font-size: 16px;
+      font-size: 1.25rem;
     }
     @include media(">=tablet", "<desktop") {
-      font-size: 16px;
+      font-size: 1.4rem;
     }
   }
   .heading-wrapper {
     h1 {
+      // The tagline is two sibling <h1>s, so default heading margins would
+      // otherwise open a gap between the lines.
+      margin: 0;
       font-size: 4rem;
       text-align: center;
-      line-height: 20px;
       @include media(">=phone", "<lgphone") {
         font-size: 1.5rem;
-        line-height: 10px;
       }
       @include media(">=lgphone", "<tablet") {
         font-size: 1.5rem;
-        line-height: 10px;
       }
       @include media(">=tablet", "<desktop") {
         font-size: 2.5rem;
@@ -51,8 +53,11 @@
     justify-content: center;
   }
   p {
-    width: 50%;
+    width: 100%;
+    max-width: 44rem;
     text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
     overflow: hidden;
     @include media(">=phone", "<lgphone") {
       font-size: 12px;

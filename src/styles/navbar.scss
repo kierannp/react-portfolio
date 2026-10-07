@@ -5,22 +5,42 @@
   align-items: center;
   justify-content: space-between;
   .name {
-    font-weight: 600;
+    font-weight: 700;
+    font-size: 22px;
+    cursor: pointer;
   }
   .links-wrapper {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
     button {
       text-decoration: none;
-      padding: 10px;
+      padding: 10px 14px;
       font-family: "Open Sans";
-      opacity: 0.6;
+      // Was opacity 0.6, which rendered the links a faint gray against white.
+      color: $text-muted;
       transition: all 0.2s ease-in-out;
-      font-size: 15px;
+      font-size: 17px;
       background-color: transparent;
       outline: none;
       border: 0px;
       cursor: pointer;
       &:hover {
-        opacity: 1;
+        color: black;
+      }
+    }
+    // The one action on the page, so it reads as a button rather than a link.
+    .nav-cta {
+      margin-left: 14px;
+      padding: 12px 24px;
+      font-size: 17px;
+      border-radius: $radius-btn;
+      background-color: $accent;
+      color: #fff;
+      font-weight: 600;
+      &:hover {
+        background-color: $accent-dark;
+        color: #fff;
       }
     }
     .active {

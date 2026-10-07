@@ -19,11 +19,14 @@ const Work = () => {
               {data.flagshipProjects.map(project => (
                 <FlagshipCard
                   key={project.id}
-                  heading={project.title}
+                  heading={project.shortTitle || project.title}
+                  subtitle={project.shortTitle ? project.title : null}
+                  summary={project.summary}
                   problem={project.problem}
                   solution={project.solution}
                   impact={project.impact}
                   img={project.imageSrc}
+                  venue={project.venue}
                   links={project.links}
                   date={project.date}
                   tags={project.tags}

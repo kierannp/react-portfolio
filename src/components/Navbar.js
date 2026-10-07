@@ -19,7 +19,9 @@ const Navbar = () => {
             <button onClick={() => scrollTo("#work")}>Projects</button>
             <button onClick={() => scrollTo("#skills")}>Skills</button>
             <button onClick={() => scrollTo("#adventures")}>Adventures</button>
-            <button onClick={() => scrollTo("#contact")}>Contact</button>
+            <button className="nav-cta" onClick={() => scrollTo("#contact")}>
+              Work with me
+            </button>
           </div>
         </div>
       </div>

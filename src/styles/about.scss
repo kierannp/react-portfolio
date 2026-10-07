@@ -2,7 +2,10 @@
   width: 80vw;
   margin-top: 10vh;
   display: flex;
-  height: 60vh;
+  min-height: 60vh;
+  align-items: center;
+  // The text previously ran right up to the photo's edge.
+  gap: 56px;
   justify-content: space-between;
   @include media(">=phone", "<lgphone") {
     flex-direction: column-reverse;
@@ -28,12 +31,14 @@
 
     h1 {
       font-size: 3rem;
-      line-height: 20px;
       @include media(">=tablet", "<desktop") {
         text-align: center;
       }
     }
     p {
+      font-size: 18px;
+      line-height: 1.6;
+      max-width: 70ch;
       @include media(">=tablet", "<desktop") {
         text-align: center;
       }
@@ -57,8 +62,10 @@
     }
   }
   img {
-    height: 100%;
+    height: auto;
     width: 100%;
+    max-height: 60vh;
     object-fit: contain;
+    border-radius: 16px;
   }
 }
