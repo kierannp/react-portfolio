@@ -47,6 +47,12 @@ export default {
   cvLink: "/Kieran-Nehil-Puleo-CV.pdf",
 
   // End Header Details -----------------------
+
+  // Live Grouper demo (Google Cloud Run, source in /grouper-demo).
+  // Embedded by the iframe on /grouper-demo and linked as "Open full screen".
+  grouperDemo: {
+    url: "https://grouper-demo-590298028087.us-central1.run.app",
+  },
   
   // Navbar logo
   navLogo: arwinLogo,
@@ -79,6 +85,7 @@ export default {
       solution: "Built Grouper, a symmetry-aware hierarchical representation that describes molecules as graphs of functional groups and collapses symmetry-equivalent configurations. Paired with combinatorial and algebraic methods (including Pólya enumeration theory) and scalable parallel code, it generates and analyzes chemical spaces end-to-end while staying interoperable with simulation formats and data-driven models.",
       impact: "Cut isomorphism checks by nearly 99% versus naive enumeration near the exhaustive limit, making previously untenable strategies such as exhaustive design tractable and verifiable. Demonstrated on solubility optimization and polymer functionalization, and published as first author in npj Computational Materials.",
       imageSrc: grouperImage,
+      demo: { label: "Try the demo", to: "/grouper-demo/" },
       venue: { logo: venueNpjCompumats, name: "npj Computational Materials", logoHeight: 28 },
       links: [
         { label: "Publication", url: "https://www.nature.com/articles/s41524-026-02263-y" },

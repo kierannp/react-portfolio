@@ -1,0 +1,32 @@
+# Runtime + build environment for the Grouper demo Space.
+# Mirrors the upstream Grouper environment.yml, minus the ML / docs extras.
+name: grouper
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  # C++ build toolchain for Grouper's pybind11 extension
+  - cxx-compiler
+  - cmake
+  - make
+  - git
+  - pybind11
+  - scikit-build-core
+  - boost
+  - eigen
+  - nlohmann_json
+  - nauty          # also provides the geng / vcolg binaries used for enumeration
+  - llvm-openmp
+  - libpq
+  - rdkit
+  - librdkit
+  - librdkit-dev
+  - rdkit-dev
+  # Demo runtime
+  - numpy
+  - pandas
+  - matplotlib-base
+  - networkx
+  - pip:
+      - gradio==6.32.0

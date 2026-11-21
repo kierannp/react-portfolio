@@ -1,5 +1,6 @@
 
 import React, { useState } from "react";
+import { Link } from "gatsby";
 
 // "2026-08-27" -> "Aug 2026"
 const formatDate = value => {
@@ -19,6 +20,7 @@ const FlagshipCard = ({
   img,
   venue,
   links,
+  demo,
   date,
   tags,
 }) => {
@@ -100,6 +102,11 @@ const FlagshipCard = ({
         </div>
 
         <div className="links">
+          {demo && (
+            <Link to={demo.to} className="btn btn-demo">
+              {demo.label}
+            </Link>
+          )}
           {links.map(link => (
             <a
               key={link.url}

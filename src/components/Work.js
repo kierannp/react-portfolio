@@ -28,6 +28,7 @@ const Work = () => {
                   img={project.imageSrc}
                   venue={project.venue}
                   links={project.links}
+                  demo={project.demo}
                   date={project.date}
                   tags={project.tags}
                 ></FlagshipCard>
