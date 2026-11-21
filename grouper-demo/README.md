@@ -49,3 +49,38 @@ Inputs are size-capped and requests bounded (one instance, 5-minute timeout,
 queue of 32) to keep it cheap and responsive.
 
 The portfolio site embeds it at `/grouper-demo` (URL in `src/yourdata.js`).
+
+## Budget kill switch
+
+Cloud Run usage normally stays inside the free tier ($0). If it ever costs
+real money, the demo switches itself off:
+
+1. A Cloud Billing budget (**$1**, this project's **Cloud Run** charges
+   only) emails at 50% and 100% and publishes to the Pub/Sub topic
+   `billing-kill-switch`.
+2. The function in `kill-switch/` (`grouper-kill-switch`, runs as
+   `grouper-kill-switch@…`, which can administer only the `grouper-demo`
+   service) removes public access once cost ≥ budget. Nothing is deleted.
+
+Billing data lags by a few hours, and `--max-instances 1` caps the worst
+case at roughly $4–5/day, so any overshoot is a few dollars at most.
+Container-image storage (a few cents a month) is outside the budget so it
+can't trip the switch; a cleanup policy keeps only the 3 newest images.
+
+**If it trips**, check usage in the billing console, then re-open the demo:
+
+```sh
+gcloud run services add-iam-policy-binding grouper-demo --region us-central1 \
+  --project grouper-demo-0348 --member=allUsers --role=roles/run.invoker
+```
+
+Redeploy the function after editing it:
+
+```sh
+cd kill-switch && gcloud functions deploy grouper-kill-switch --gen2 \
+  --runtime python312 --region us-central1 --source . --entry-point on_budget \
+  --trigger-topic billing-kill-switch --project grouper-demo-0348 \
+  --service-account grouper-kill-switch@grouper-demo-0348.iam.gserviceaccount.com \
+  --set-env-vars TARGET_PROJECT=grouper-demo-0348,TARGET_REGION=us-central1,TARGET_SERVICE=grouper-demo \
+  --max-instances 1 --memory 256Mi --retry
+```
