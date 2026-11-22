@@ -20,6 +20,8 @@ const GrouperDemoPage = () => {
     <>
       <SEO
         title="Grouper interactive demo"
+        path="/grouper-demo/"
+        image="/grouper-demo-preview.png"
         description="Try Grouper in the browser: fragment molecules into functional groups, exhaustively enumerate chemical spaces, and sample new molecules, with CSV/SDF/JSON downloads."
       />
       <div className="demo-page">

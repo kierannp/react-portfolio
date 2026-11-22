@@ -9,7 +9,8 @@ import React from "react"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
-function SEO({ description, lang, meta, title }) {
+import data from "../yourdata"
+function SEO({ description, lang, meta, title, path, image }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -28,18 +29,22 @@ function SEO({ description, lang, meta, title }) {
 
   const metaDescription = description || site.siteMetadata.description
   const defaultTitle = site.siteMetadata?.title
-  const metaImage = site.siteMetadata?.siteUrl
-    ? `${site.siteMetadata.siteUrl}${site.siteMetadata.image}`
-    : site.siteMetadata?.image
+  const siteUrl = site.siteMetadata?.siteUrl || ``
+  // Person/portrait image for the schema; pages may override the share image.
+  const personImage = `${siteUrl}${site.siteMetadata?.image}`
+  const metaImage = image ? `${siteUrl}${image}` : personImage
 
-  const canonical = site.siteMetadata?.siteUrl
+  const canonical = siteUrl
+  // Each page is its own canonical URL (a root-only canonical would tell
+  // search engines every page duplicates the homepage).
+  const pageUrl = `${siteUrl}${path || "/"}`
 
   const personSchema = {
     "@context": "https://schema.org",
     "@type": "Person",
     name: "Kieran Nehil-Puleo",
     url: canonical,
-    image: metaImage,
+    image: personImage,
     jobTitle: "ML + Quant Researcher",
     description: metaDescription,
     alumniOf: [
@@ -70,13 +75,23 @@ function SEO({ description, lang, meta, title }) {
       }}
       title={title}
       titleTemplate={defaultTitle ? `${defaultTitle} \u2014 %s` : null}
-      link={canonical ? [{ rel: `canonical`, href: `${canonical}/` }] : []}
+      link={siteUrl ? [{ rel: `canonical`, href: pageUrl }] : []}
       script={[
         {
           type: `application/ld+json`,
           innerHTML: JSON.stringify(personSchema),
         },
-      ]}
+      ].concat(
+        data.goatcounterCode
+          ? [
+              {
+                async: true,
+                src: `https://gc.zgo.at/count.js`,
+                "data-goatcounter": `https://${data.goatcounterCode}.goatcounter.com/count`,
+              },
+            ]
+          : []
+      )}
       meta={[
         {
           name: `description`,
@@ -93,6 +108,10 @@ function SEO({ description, lang, meta, title }) {
         {
           property: `og:type`,
           content: `website`,
+        },
+        {
+          property: `og:url`,
+          content: pageUrl,
         },
         {
           property: `og:image`,
@@ -127,6 +146,8 @@ SEO.defaultProps = {
   lang: `en`,
   meta: [],
   description: ``,
+  path: `/`,
+  image: null,
 }
 
 SEO.propTypes = {
@@ -134,6 +155,8 @@ SEO.propTypes = {
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string.isRequired,
+  path: PropTypes.string,
+  image: PropTypes.string,
 }
 
 export default SEO

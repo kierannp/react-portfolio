@@ -4,3 +4,4 @@ __pycache__/
 .gcloudignore
 README.md
 kill-switch/
+usage.sh

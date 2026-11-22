@@ -14,7 +14,6 @@ import arwinLogo from "./images/cfa18c749773c0e01b3aae98f82f1f07.png"
 import manifold from "./images/manifold.gif"
 import blobImage from "./images/image.png"
 import thinImage from "./images/thin_film.gif"
-import petriGif from "./images/PetriNet.gif"
 import powderImage from "./images/powder_bird.png"
 import patentIcon from "./images/patent.svg"
 import venueJournalIcon from "./images/venue-journal.svg"
@@ -50,6 +49,11 @@ export default {
 
   // Live Grouper demo (Google Cloud Run, source in /grouper-demo).
   // Embedded by the iframe on /grouper-demo and linked as "Open full screen".
+  // Privacy-friendly page counts (no cookies): sign up at goatcounter.com,
+  // then put your site code here, e.g. "kierannp" for kierannp.goatcounter.com.
+  // Left empty, no analytics script is added.
+  goatcounterCode: "",
+
   grouperDemo: {
     url: "https://grouper-demo-590298028087.us-central1.run.app",
   },
@@ -138,15 +142,6 @@ export default {
       url: "https://github.com/kierannp/open-powder-form",
       date: "2021-11-15",
       tags: ["Autonomous Experimentation", "Hardware", "3D Printing"],
-    },
-    {
-      id: 3,
-      title: "Petri Net Design Studio",
-      para: "This is a design studio for building and simulating petri nets",
-      imageSrc: petriGif,
-      url: "https://github.com/kierannp/PetriNet",
-      date: "2022-05-20",
-      tags: ["Petri Nets", "Design Studio", "Simulation"],
     },
     {
       id: 8,

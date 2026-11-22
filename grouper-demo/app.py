@@ -18,6 +18,8 @@ import os
 import re
 import tempfile
 import time
+import functools
+import sys
 from itertools import cycle
 
 import gradio as gr
@@ -143,6 +145,44 @@ def _tmpfile(suffix):
 def _err(msg):
     """gr.Error renders HTML, so escape anything that echoes user input."""
     return gr.Error(html.escape(str(msg)))
+
+
+def _log_event(event, **fields):
+    """One JSON line on stdout; Cloud Run turns it into a structured log entry
+    (see usage.sh). Deliberately anonymous: no IPs, no user-entered text."""
+    print(json.dumps({"event": event, **fields}), file=sys.stdout, flush=True)
+
+
+def _tracked(tab, describe):
+    """Wrap a handler so user-triggered runs are logged (page-load pre-fills
+    call the unwrapped handler and are not counted)."""
+    def deco(fn):
+        @functools.wraps(fn)
+        def wrapper(*args):
+            t0 = time.perf_counter()
+            try:
+                out = fn(*args)
+                status = "ok"
+                return out
+            except gr.Error:
+                status = "rejected"
+                raise
+            except Exception:
+                status = "error"
+                raise
+            finally:
+                _log_event("grouper_run", tab=tab, status=status,
+                           seconds=round(time.perf_counter() - t0, 3),
+                           **describe(*args))
+        return wrapper
+    return deco
+
+
+def _describe_groups(selected, custom, n_nodes, *rest):
+    n_custom = sum(1 for line in (custom or "").splitlines()
+                   if line.strip() and not line.strip().startswith("#"))
+    return {"n_nodes": n_nodes, "presets": sorted(selected or []),
+            "n_custom_groups": n_custom}
 
 
 def _group_graph_to_dict(gg, atom_map=None):
@@ -624,6 +664,14 @@ def run_sample(selected, custom, n_nodes, n_samples, seed):
     return _results_outputs(result, f"sample_n{n_nodes}", cards, note)
 
 
+# User-triggered versions of the handlers (logged); see _tracked.
+track_enumerate = _tracked("enumerate", _describe_groups)(run_enumerate)
+track_sample = _tracked("sample", _describe_groups)(run_sample)
+track_fragment = _tracked(
+    "fragment", lambda smiles, lib, mode: {"library": lib, "mode": mode}
+)(run_fragment)
+
+
 # ---------------------------------------------------------------------------
 # UI
 # ---------------------------------------------------------------------------
@@ -965,28 +1013,28 @@ with gr.Blocks(title="Grouper demo", analytics_enabled=False,
     f_inputs = [f_smiles, f_lib, f_mode]
     f_outputs = [f_stats, f_view, f_table, f_json, f_csv, f_svg]
 
-    e_btn.click(run_enumerate, e_inputs, list(e_out), concurrency_limit=1)
+    e_btn.click(track_enumerate, e_inputs, list(e_out), concurrency_limit=1)
     for comp in (e_groups, e_custom, e_n):
         comp.change(_size_estimate, e_inputs, e_hint, show_progress="hidden",
                     queue=False)
     for btn, (_, keys, size) in zip(e_preset_btns, ENUM_PRESETS):
         btn.click(
             lambda k=keys, n=size: (k, "", n), None, e_inputs, queue=False,
-        ).then(run_enumerate, e_inputs, list(e_out), concurrency_limit=1)
+        ).then(track_enumerate, e_inputs, list(e_out), concurrency_limit=1)
 
-    s_btn.click(run_sample, s_inputs, list(s_out), concurrency_limit=1)
+    s_btn.click(track_sample, s_inputs, list(s_out), concurrency_limit=1)
     for comp in (s_groups, s_custom, s_n):
         comp.change(
             lambda g, c, n: _size_estimate(g, c, n, cap=random_sample is None),
             [s_groups, s_custom, s_n], s_hint, show_progress="hidden", queue=False,
         )
 
-    f_btn.click(run_fragment, f_inputs, f_outputs, concurrency_limit=2)
-    f_smiles.submit(run_fragment, f_inputs, f_outputs, concurrency_limit=2)
+    f_btn.click(track_fragment, f_inputs, f_outputs, concurrency_limit=2)
+    f_smiles.submit(track_fragment, f_inputs, f_outputs, concurrency_limit=2)
     for btn, (_, smi, lib) in zip(f_example_btns, FRAG_EXAMPLES):
         btn.click(
             lambda s=smi, l=lib: (s, l), None, [f_smiles, f_lib], queue=False,
-        ).then(run_fragment, f_inputs, f_outputs, concurrency_limit=2)
+        ).then(track_fragment, f_inputs, f_outputs, concurrency_limit=2)
 
     # Pre-fill every tab so visitors land on results, not empty panels.
     demo.load(run_enumerate, e_inputs, list(e_out))
@@ -997,6 +1045,7 @@ with gr.Blocks(title="Grouper demo", analytics_enabled=False,
     # supplies its own intro, so hide ours there.
     def _hide_intro_when_embedded(request: gr.Request):
         embedded = request is not None and request.query_params.get("embed") == "1"
+        _log_event("page_view", embedded=embedded)
         return gr.update(visible=not embedded)
 
     demo.load(_hide_intro_when_embedded, None, intro, queue=False)
