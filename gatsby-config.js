@@ -6,7 +6,7 @@ module.exports = {
   
   siteMetadata: {
     title: `Kieran Nehil-Puleo`,
-    description: `ML + Quant Researcher and Materials Science Ph.D. (Vanderbilt). Applying machine learning to financial markets and the physical sciences.`,
+    description: `ML researcher in the physical sciences, now in quantitative finance. Materials Science Ph.D. (Vanderbilt) and NSF Graduate Research Fellow.`,
     author: `Kieran Nehil-Puleo`,
     siteUrl: `https://kierannp.github.io`,
     image: `/portrait.jpg`,

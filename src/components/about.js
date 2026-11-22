@@ -20,6 +20,17 @@ const About = () => {
               <br></br>
               {data.aboutParaThree}
             </p>
+            {data.fellowship && (
+              <div className="fellowship">
+                <span className="fellowship-mark" aria-hidden="true">
+                  &#9733;
+                </span>
+                <div>
+                  <strong>{data.fellowship.title}</strong>
+                  <span>{data.fellowship.detail}</span>
+                </div>
+              </div>
+            )}
           </div>
           <div className="image-wrapper">
             <img src={data.aboutImage} alt="Portrait of Kieran Nehil-Puleo"></img>

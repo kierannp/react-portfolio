@@ -35,7 +35,7 @@ export default {
   //   Header Paragraph
   // Rendered one entry per line in the hero.
   headerParagraph: [
-    "ML + Quant Researcher applying machine learning to financial markets.",
+    "ML researcher — physical sciences, now quantitative finance.",
     "Ph.D. from Vanderbilt, NSF Graduate Research Fellow.",
   ],
 
@@ -181,6 +181,11 @@ export default {
     "I value truth, hard work, and passion, and I'm motivated by making a change in the world — I became an engineer because I wanted to manifest my ideas. Outside of work, my main pursuit is jiu jitsu, where I'm a three-stripe blue belt, and I've previously competed in wrestling and Olympic weightlifting. I'm currently based in Nashville, TN.",
   aboutParaThree:
     "I hold undergraduate degrees in Materials Science Engineering and Statistics, with minors in Computational Modeling and Computer Science. I love integrating cross-disciplinary skills to build things that matter.",
+  // Shown as a callout in the About section (wording from the CV).
+  fellowship: {
+    title: "NSF Graduate Research Fellow",
+    detail: "One of ~2,000 fellowships awarded from 12,000+ applicants nationwide.",
+  },
   aboutImage:
     portfolioImage,
 

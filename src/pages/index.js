@@ -12,7 +12,7 @@ import Fade from "react-reveal/Fade"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="ML + Quant Researcher" />
+    <SEO title="ML Researcher, Physical Sciences & Quantitative Finance" />
     <Header></Header>
     <hr className="divider" />
     <About></About>
