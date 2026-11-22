@@ -36,13 +36,18 @@ const FlagshipCard = ({
         {venue && (
           <div className="venue">
             {venue.logo ? (
-              // Publisher's own masthead, which already carries the journal name.
-              <img
-                className="venue-logo"
-                src={venue.logo}
-                alt={venue.name}
-                style={venue.logoHeight ? { height: `${venue.logoHeight}px` } : undefined}
-              />
+              <>
+                {/* Publisher's masthead; most already carry the journal name,
+                    publisher-only logos set showName to add it. */}
+                <img
+                  className="venue-logo"
+                  src={venue.logo}
+                  alt={venue.showName ? "" : venue.name}
+                  aria-hidden={venue.showName ? "true" : undefined}
+                  style={venue.logoHeight ? { height: `${venue.logoHeight}px` } : undefined}
+                />
+                {venue.showName && <span>{venue.name}</span>}
+              </>
             ) : (
               <>
                 <img src={venue.icon} alt="" aria-hidden="true" />

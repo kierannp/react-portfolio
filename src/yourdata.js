@@ -16,10 +16,10 @@ import blobImage from "./images/image.png"
 import thinImage from "./images/thin_film.gif"
 import powderImage from "./images/powder_bird.png"
 import patentIcon from "./images/patent.svg"
-import venueJournalIcon from "./images/venue-journal.svg"
 import venuePatentIcon from "./images/venue-patent.svg"
 import venueNpjCompumats from "./images/venue-npj-compumats.svg"
 import venueNatComputSci from "./images/venue-nat-comput-sci.svg"
+import venueAcs from "./images/venue-acs.svg"
 import mutexaImage from "./images/mutexagpt.png"
 import journalIcon from "./images/iegnn.svg"
 import grouperImage from "./images/grouper.png"
@@ -111,7 +111,8 @@ export default {
       solution: "Developed an E(n) equivariant graph neural network (IEGNN) that incorporates spatial features and respects physical symmetries (E(n) equivariance), allowing for more efficient and accurate learning from 3D molecular data.",
       impact: "The IEGNN provides a more efficient way to predict chemical properties, which can accelerate the discovery of new materials and molecules. This work was published in the Journal of Physical Chemistry B.",
       imageSrc: journalIcon,
-      venue: { icon: venueJournalIcon, name: "The Journal of Physical Chemistry B" },
+      // ACS logo names only the publisher, so the journal name is shown too.
+      venue: { logo: venueAcs, name: "The Journal of Physical Chemistry B", logoHeight: 20, showName: true },
       links: [
         { label: "Publication", url: "https://pubs.acs.org/doi/10.1021/acs.jpcb.3c07304" }
       ],
