@@ -70,48 +70,71 @@
   }
 }
 
-// NSF GRFP callout under the About text.
-.about-section .content .fellowship {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  margin-top: 28px;
-  padding: 14px 18px;
-  border: 1px solid $border-soft;
-  border-left: 4px solid $accent;
-  border-radius: $radius-card;
-  background: #fafafb;
+// Credentials logo row under the About text: logos rendered as uniform
+// charcoal marks to suit the black-and-white design, full colour on hover.
+.about-section .content .credentials {
+  list-style: none;
+  padding: 0;
+  margin: 32px 0 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
   max-width: 70ch;
-  box-sizing: border-box;
 
-  .fellowship-mark {
-    flex-shrink: 0;
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    background: $accent;
-    color: #fff;
+  li {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 18px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
   }
 
-  strong {
-    display: block;
-    font-size: 17px;
-    color: #111;
+  // Fixed-height box so captions line up whatever each logo's height.
+  .logo-box {
+    height: 50px;
+    display: flex;
+    align-items: center;
+  }
+
+  img {
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+    border-radius: 0; // the portrait's rounded corners were clipping letters
+    filter: grayscale(1) brightness(0.45) contrast(1.4);
+    transition: filter 0.2s ease;
+  }
+
+  li:hover img {
+    filter: none;
   }
 
   span {
     font-family: "Open Sans";
-    font-size: 15px;
+    font-size: 13px;
+    line-height: 1.4;
     color: $text-muted;
   }
 
   @include media(">=tablet", "<desktop") {
     margin-left: auto;
     margin-right: auto;
-    text-align: left;
+    li { align-items: center; text-align: center; }
+  }
+
+  // Phones: one row per credential, logo beside its caption.
+  @include media("<tablet") {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    li {
+      flex-direction: row;
+      align-items: center;
+      gap: 16px;
+    }
+    .logo-box {
+      width: 120px;
+      height: 44px;
+      flex-shrink: 0;
+    }
+    img { max-height: 40px; }
   }
 }

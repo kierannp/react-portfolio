@@ -20,16 +20,21 @@ const About = () => {
               <br></br>
               {data.aboutParaThree}
             </p>
-            {data.fellowship && (
-              <div className="fellowship">
-                <span className="fellowship-mark" aria-hidden="true">
-                  &#9733;
-                </span>
-                <div>
-                  <strong>{data.fellowship.title}</strong>
-                  <span>{data.fellowship.detail}</span>
-                </div>
-              </div>
+            {data.credentials && (
+              <ul className="credentials">
+                {data.credentials.map(c => (
+                  <li key={c.name}>
+                    <div className="logo-box">
+                      <img
+                        src={c.logo}
+                        alt={c.name}
+                        style={{ height: `${c.height || 40}px` }}
+                      />
+                    </div>
+                    <span>{c.caption}</span>
+                  </li>
+                ))}
+              </ul>
             )}
           </div>
           <div className="image-wrapper">

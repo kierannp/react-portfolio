@@ -1,9 +1,41 @@
 import React from "react"
-import Card from "./atoms/Card"
 import FlagshipCard from "./atoms/FlagshipCard"
 import Fade from "react-reveal/Fade"
 
 import data from "../yourdata"
+
+// Label the single link on the smaller projects by what it points to.
+const linkLabel = url =>
+  /github\.com/.test(url) ? "Code" : /\.pdf/i.test(url) ? "Talk (PDF)" : "View"
+
+// One grid: the flagship projects first, then the smaller ones in the same
+// card style (they have no venue, so the card shows their date instead).
+const projects = [
+  ...data.flagshipProjects.map(p => ({
+    key: `f${p.id}`,
+    heading: p.shortTitle || p.title,
+    subtitle: p.shortTitle ? p.title : null,
+    summary: p.summary,
+    problem: p.problem,
+    solution: p.solution,
+    impact: p.impact,
+    img: p.imageSrc,
+    venue: p.venue,
+    links: p.links,
+    demo: p.demo,
+    date: p.date,
+    tags: p.tags,
+  })),
+  ...data.otherProjects.map(p => ({
+    key: `o${p.id}`,
+    heading: p.title,
+    summary: p.para,
+    img: p.imageSrc,
+    links: p.url ? [{ label: linkLabel(p.url), url: p.url }] : [],
+    date: p.date,
+    tags: p.tags,
+  })),
+]
 
 const Work = () => {
   return (
@@ -11,49 +43,13 @@ const Work = () => {
       <div className="container">
         <div className="work-wrapper">
           <Fade bottom>
-            <h1>Flagship Projects</h1>
+            <h1>Projects</h1>
           </Fade>
 
           <div className="work-list">
             <Fade bottom cascade>
-              {data.flagshipProjects.map(project => (
-                <FlagshipCard
-                  key={project.id}
-                  heading={project.shortTitle || project.title}
-                  subtitle={project.shortTitle ? project.title : null}
-                  summary={project.summary}
-                  problem={project.problem}
-                  solution={project.solution}
-                  impact={project.impact}
-                  img={project.imageSrc}
-                  venue={project.venue}
-                  links={project.links}
-                  demo={project.demo}
-                  date={project.date}
-                  tags={project.tags}
-                ></FlagshipCard>
-              ))}
-            </Fade>
-          </div>
-        </div>
-        <hr className="divider" />
-        <div className="work-wrapper">
-          <Fade bottom>
-            <h1 className="other-projects-title">Other Projects</h1>
-          </Fade>
-
-          <div className="work-list">
-            <Fade bottom cascade>
-              {data.otherProjects.map(project => (
-                <Card
-                  key={project.id}
-                  heading={project.title}
-                  paragraph={project.para}
-                  img={project.imageSrc}
-                  projectLink={project.url}
-                  date={project.date}
-                  tags={project.tags}
-                ></Card>
+              {projects.map(({ key, ...project }) => (
+                <FlagshipCard key={key} {...project}></FlagshipCard>
               ))}
             </Fade>
           </div>

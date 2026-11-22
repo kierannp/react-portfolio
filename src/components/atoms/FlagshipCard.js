@@ -53,6 +53,8 @@ const FlagshipCard = ({
           </div>
         )}
 
+        {!venue && date && <p className="card-date">{formatDate(date)}</p>}
+
         <h1 className="header">{heading}</h1>
         {subtitle && <p className="subtitle">{subtitle}</p>}
         {summary && <p className="summary">{summary}</p>}

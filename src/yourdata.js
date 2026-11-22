@@ -23,6 +23,9 @@ import venueNatComputSci from "./images/venue-nat-comput-sci.svg"
 import mutexaImage from "./images/mutexagpt.png"
 import journalIcon from "./images/iegnn.svg"
 import grouperImage from "./images/grouper.png"
+import credVanderbilt from "./images/credential-vanderbilt.png"
+import credNsf from "./images/credential-nsf.svg"
+import credMsu from "./images/credential-msu.svg"
 
 export default {
 
@@ -181,11 +184,28 @@ export default {
     "I value truth, hard work, and passion, and I'm motivated by making a change in the world — I became an engineer because I wanted to manifest my ideas. Outside of work, my main pursuit is jiu jitsu, where I'm a three-stripe blue belt, and I've previously competed in wrestling and Olympic weightlifting. I'm currently based in Nashville, TN.",
   aboutParaThree:
     "I hold undergraduate degrees in Materials Science Engineering and Statistics, with minors in Computational Modeling and Computer Science. I love integrating cross-disciplinary skills to build things that matter.",
-  // Shown as a callout in the About section (wording from the CV).
-  fellowship: {
-    title: "NSF Graduate Research Fellow",
-    detail: "One of ~2,000 fellowships awarded from 12,000+ applicants nationwide.",
-  },
+  // Logo row under About Me (wording from the CV). The logos only state
+  // affiliation (degrees, fellowship) and must not imply endorsement.
+  credentials: [
+    {
+      logo: credVanderbilt,
+      name: "Vanderbilt University",
+      caption: "Ph.D., Interdisciplinary Materials Science",
+      height: 34, // px; round emblems need more height than wordmarks
+    },
+    {
+      logo: credNsf,
+      name: "National Science Foundation",
+      caption: "Graduate Research Fellow",
+      height: 50,
+    },
+    {
+      logo: credMsu,
+      name: "Michigan State University",
+      caption: "Dual B.S., Statistics & Materials Science (Honors)",
+      height: 30,
+    },
+  ],
   aboutImage:
     portfolioImage,
 
