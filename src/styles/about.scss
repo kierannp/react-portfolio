@@ -113,6 +113,7 @@
     font-size: 13px;
     line-height: 1.4;
     color: $text-muted;
+    white-space: pre-line; // "\n" in a caption starts a new line
   }
 
   @include media(">=tablet", "<desktop") {

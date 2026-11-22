@@ -202,7 +202,7 @@ export default {
     {
       logo: credMsu,
       name: "Michigan State University",
-      caption: "Dual B.S., Statistics & Materials Science (Honors)",
+      caption: "B.S. Statistics\nB.S. Materials Science & Engineering",
       height: 30,
     },
   ],
